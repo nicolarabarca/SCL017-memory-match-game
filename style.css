@@ -1,0 +1,71 @@
+body {
+  background-image: url("fondo.png");
+}
+
+.img {
+  margin-left: 30%;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+  height: 30%;
+}
+.imgOne {
+  margin-left: auto;
+  margin-right: 10%;
+  display: block;
+  width: 35%;
+  height: 35%;
+}
+.imgTwo {
+  margin-left: 10%;
+  display: block;
+  width: 30%;
+  height: 30%;
+}
+.boxPokemon {
+  float: right;
+}
+.boxPokemon1 {
+  float: left;
+}
+
+.closing {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.botonImagen {
+  width: 20%;
+  height: 20%;
+}
+.boxButton {
+  width: 50%;
+  height: 50%;
+  /* centrar vertical y horizontalmente */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25% 0 0 -25%; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+}
+
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+}
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
