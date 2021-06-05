@@ -15,10 +15,10 @@
 //
 
 const App = () => {
-  const el = document.createElement('div');
+  const el = document.createElement("div");
 
-  el.className = 'App';
-  el.textContent = 'Hola mundo!';
+  el.className = "App";
+  el.textContent = "";
 
   return el;
 };

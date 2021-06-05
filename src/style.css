@@ -1,0 +1,95 @@
+/*  cfondo de pantalla */
+body {
+  background-image: url("FondoPokemon.jpeg");
+}
+
+/*  caja que contiene todos los elemento de pantalla de inicio */
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+/*  atributos imagen titulo pokemon */
+.img {
+  margin-left: 30%;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+/*  caja que contiene a pikachu */
+.boxPokemon {
+  float: right;
+  width: 50%;
+  height: 50%;
+  background-color: yellowgreen;
+}
+/*  atributos de imagen pikachu */
+.imgOne {
+  margin-left: auto;
+  margin-right: none;
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
+/*  caja que contiene a bolbasor */
+.boxPokemon1 {
+  background-color: tomato;
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+
+/*  atributos de imagen bolbasor */
+.imgTwo {
+  margin-left: none;
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
+/*  caja que contiene el boton */
+.boxButton {
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  background-color: transparent;
+  border-width: 0px;
+  /* centrar vertical y horizontalmente */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25% 0 0 -25%; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+}
+
+/*  estilo del boton */
+
+.closing {
+  background-color: transparent;
+  outline-color: none;
+  border-radius: none;
+  overflow: hidden;
+  width: max-content;
+  height: max-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*  Atributos imagen pokebola */
+.botonImagen {
+  width: 40%;
+  height: 40%;
+}
+
+/*  texto piede pagina*/
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+}
