@@ -9,8 +9,8 @@
   </head>
   
 
-  <body>
-    <div class="container"> <!–– Aqui comienza la caja contenedora global de la primera pantalla ––>
+  <body id="root">
+    <div id="containerStepOne" class="container">  
       <div class="boxImg">
         <img class="img" src="pokemon.png"/>
         <img  class="imgMemory" src="https://fontmeme.com/permalink/210605/213031742f47ec44e796318d92459499.png" alt="fuente-pokemon" >
@@ -24,19 +24,26 @@
         
       
         
-        <button  class="closing, boxButton" onClick=" "><img class="botonImagen" src="pokebola.png" /> </button> 
+        <button id="buttonStart" class="closing, boxButton" > <p class="WordGo"> <img src="https://fontmeme.com/permalink/210607/27ee703ff0a72da2b5db2f78a4c96393.png"></p>
+          <img class="botonImagen" src="pokebola.png" /> 
+        </button> 
        
         
         <script src="main.js" type="module"></script>
       
     
-      </div>  <!–– Aqui termina la caja contenedora global de la primera pantalla ––>
+      </div> 
+      
+      <div id="containerStepTwo" class="container">
+       <b> soy el contenedor dos</b>
+      </div>   
   </body>
   <footer class="footer"> Derechos reservados @Nintendo</footer>
 
 
 
 </html>
+
 
 
 
