@@ -1,31 +1,50 @@
-/*  cfondo de pantalla */
+/*fondo de pantalla */
 body {
+  min-height: 100vh;
   background-image: url("FondoPokemon.jpeg");
+  margin: 0;
+  padding: 0;
 }
 
 /*  caja que contiene todos los elemento de pantalla de inicio */
 .container {
   width: 80%;
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0% auto;
   overflow: hidden;
   padding: 20px;
   box-sizing: border-box;
 }
+
+/*  caja que contienela palabra pokemon */
+.boxImg {
+  width: 100%;
+  height: 60%;
+  background-color: transparent;
+}
+
 /*  atributos imagen titulo pokemon */
 .img {
-  margin-left: 30%;
-  margin-right: auto;
   display: block;
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*  atributos imagen titulo Memory battle*/
+.imgMemory {
+  display: block;
+  margin: 0% auto;
+  width: 30%;
+  left: 30%;
 }
 /*  caja que contiene a pikachu */
+
 .boxPokemon {
   float: right;
   width: 50%;
   height: 50%;
-  background-color: yellowgreen;
+  background-color: transparent;
 }
 /*  atributos de imagen pikachu */
 .imgOne {
@@ -38,12 +57,11 @@ body {
 
 /*  caja que contiene a bolbasor */
 .boxPokemon1 {
-  background-color: tomato;
+  background-color: transparent;
   float: left;
   width: 50%;
   height: 50%;
 }
-
 /*  atributos de imagen bolbasor */
 .imgTwo {
   margin-left: none;
@@ -54,16 +72,31 @@ body {
 
 /*  caja que contiene el boton */
 .boxButton {
-  border-radius: 50%;
-  width: 50%;
-  height: 50%;
+  border-radius: 100%;
+  width: 30%;
+  height: 30%;
   background-color: transparent;
   border-width: 0px;
   /* centrar vertical y horizontalmente */
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -25% 0 0 -25%; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+  /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+  margin: -0% 0 0 -15%;
+}
+/*  aqui se le danlos atributos a la palabra go /juga/play */
+.boxButtonone {
+  border-radius: 100%;
+  width: 30%;
+  height: 30%;
+  background-color: transparent;
+  border-width: 0px;
+  /* centrar vertical y horizontalmente */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+  margin: -0% 0 0 -15%;
 }
 
 /*  estilo del boton */
@@ -71,7 +104,7 @@ body {
 .closing {
   background-color: transparent;
   outline-color: none;
-  border-radius: none;
+  border-radius: 0px;
   overflow: hidden;
   width: max-content;
   height: max-content;
@@ -81,8 +114,11 @@ body {
 }
 /*  Atributos imagen pokebola */
 .botonImagen {
-  width: 40%;
-  height: 40%;
+  width: 70%;
+  height: 70%;
+
+  /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+  margin: -0% 5 0 -15%;
 }
 
 /*  texto piede pagina*/
@@ -92,4 +128,17 @@ body {
   bottom: 0px;
   height: 30px;
   width: 100%;
+}
+/*  atributospalabra  go/ play / jugar*/
+.WordGo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+  margin: -8% 0 0 -13%;
+}
+
+/*  esconder contenido*/
+.hidden {
+  display: none;
 }
