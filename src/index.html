@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Memory Match</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun.scale=1.0 "
-    />
-    <a href="https://fontmeme.com/es/fuente-pokemon/"></a>
-  </head>
-
-  <body id="root">
-    <div id="containerStepOne" class="container">
-      <div class="boxImg">
-        <img class="img" src="pokemon.png" />
-        <img
-          class="imgMemory"
-          src="https://fontmeme.com/permalink/210605/213031742f47ec44e796318d92459499.png"
-          alt="fuente-pokemon"
-        />
+   <head>
+      <meta charset="utf-8" />
+      <title>Memory Match</title>
+      <link rel="stylesheet" href="style.css" />
+      <meta
+         name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun.scale=1.0 "
+         />
+      <a href="https://fontmeme.com/es/fuente-pokemon/"></a>
+   </head>
+   <body id="root">
+      <div id="pantalla1" style="display: block;">
+         <div id="containerStepOne" class="container">
+            <div class="boxImg">
+               <img class="img" src="pokemon.png" />
+               <img
+                  class="imgMemory"
+                  src="https://fontmeme.com/permalink/210605/213031742f47ec44e796318d92459499.png"
+                  alt="fuente-pokemon"
+                  />
+            </div>
+            <div class="boxPokemon">
+               <img class="imgOne" src="pi.png" />
+            </div>
+            <div class="boxPokemon1">
+               <img class="imgTwo" src="clipart967980.png" />
+            </div>
+            <button id="buttonStart" class="closing, boxButton">
+               <p class="WordGo">
+                  <img
+                     src="https://fontmeme.com/permalink/210607/27ee703ff0a72da2b5db2f78a4c96393.png"
+                     />
+               </p>
+               <img class="botonImagen" src="pokebola.png" />
+            </button>
+            <script src="main.js" type="module"></script>
+         </div>
       </div>
-      <div class="boxPokemon">
-        <img class="imgOne" src="pi.png" />
+      <div id="pantalla2" style="display: none;">
+         <div id="containerStepTwo" class="containerFlextwo">
+            <div class="timer">  Timer</div>
+            <div class="cards"> cartas</div>
+            <div class="boxHowtoPlay">como jugar</div>
+            <b> soy el contenedor dos</b>
+         </div>
       </div>
-      <div class="boxPokemon1">
-        <img class="imgTwo" src="clipart967980.png" />
-      </div>
-
-      <button id="buttonStart" class="closing, boxButton">
-        <p class="WordGo">
-          <img
-            src="https://fontmeme.com/permalink/210607/27ee703ff0a72da2b5db2f78a4c96393.png"
-          />
-        </p>
-        <img class="botonImagen" src="pokebola.png" />
-      </button>
-
-      <script src="main.js" type="module"></script>
-    </div>
-
-    <div id="containerStepTwo" class="containerFlextwo">
-      <div class="timer">  Timer</div>
-        <div class="cards"> cartas</div>
-        <div class="boxHowtoPlay">como jugar</div>
-
-      <b> soy el contenedor dos</b>
-    </div>
-  </body>
-  <footer class="footer">Derechos reservados @Nintendo</footer>
+   </body>
+   <footer class="footer">Derechos reservados @Nintendo</footer>
 </html>
