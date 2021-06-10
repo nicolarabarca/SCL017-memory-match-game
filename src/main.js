@@ -24,6 +24,7 @@ function buttonStart() {
   console.log("funcionboton")
   document.getElementById("pantalla1").style.display = "none";
   document.getElementById("pantalla2").style.display = "block";
+  
   //console.log(pokemones);
   for(let pokemon of pokemones.items){
     var card = cardBase.cloneNode(true);
