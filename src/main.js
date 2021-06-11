@@ -36,6 +36,6 @@ function buttonStart() {
     //console.log(pokemon);
 
   }
-
-
+ 
 }
+  
