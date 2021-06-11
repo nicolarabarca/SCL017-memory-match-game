@@ -152,9 +152,6 @@ body {
   opacity: 0.75;
 }
 
-
-
-
 /*  Contenedor timer*/
 .timer {
   display: flex;
@@ -163,11 +160,10 @@ body {
   background-color: rebeccapurple;
   order: 1;
   margin-top: 3%;
-  margin-left:650px ;
-  
+  margin-left: 650px;
 }
 
-.cards {
+.boxCards {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 40px;
@@ -175,6 +171,9 @@ body {
   padding: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  width: 900px;
+  height: 600px;
+  margin-right: 800px;
 }
 
 /*  Contenedor de imagenes como jugar
@@ -202,7 +201,7 @@ body {
   cursor: pointer;
   transition: 0.4s;
 }
-.questionMark {
+.imgPokemon {
   width: 5%;
   height: 6%;
   border-radius: 5px;
