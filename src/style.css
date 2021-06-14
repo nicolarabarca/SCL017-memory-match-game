@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
 /*fondo de pantalla */
 body {
   min-height: 100vh;
   background-image: url("FondoPokemon.jpeg");
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 /*  caja que contiene todos los elemento de pantalla de inicio */
@@ -142,10 +146,9 @@ body {
 .containerFlextwo {
   display: flex;
   width: 100%;
-  height: 690px;
+  height: 650px;
   max-width: 100%;
   margin: 0% auto;
-  align-content: space-evenly;
   justify-content: center;
   flex-flow: row wrap;
   background-color: #c4c4c4;
@@ -156,55 +159,105 @@ body {
 .timer {
   display: flex;
   height: 10%;
-  width: 20%;
+  width: 10%;
   background-color: rebeccapurple;
   order: 1;
-  margin-top: 3%;
-  margin-left: 650px;
+  margin-top: 0%;
+  margin-left: 700px;
 }
 
+/*  Contenedor de cartas*/
 .boxCards {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 40px;
-  background-color: #2196f3;
-  padding: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  width: 900px;
-  height: 600px;
-  margin-right: 800px;
-}
-
-/*  Contenedor de imagenes como jugar
-.boxHowtoPlay {
-  height: 50%;
-  width: 40%;
-  background-color: greenyellow;
-  order: 3;
   display: flex;
-} */
-
-.cardDesing {
-  /* 
-  cursor: pointer;
-  transition: 0.4s;
-  flex-flow: row wrap;
-  grid-column: auto;*/
-  background-color: white (255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 20px;
-  border-radius: 20px;
-  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
-  cursor: pointer;
-  transition: 0.4s;
+  background-color: lightgray;
+  width: 600px;
+  height: 500px;
+  margin-right: 650px;
+  order: 2;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  padding: 50px;
 }
-.imgPokemon {
-  width: 5%;
-  height: 6%;
-  border-radius: 5px;
-  flex-direction: row;
-  margin: -5px 0px 0px -5px;
+/*  Diseño de  cartas, Se define un tiempo de transición que mantenga el estilo 3D 
+y se definen las coordenadas dónde se aplicará el efecto */
+.cardDesing {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  transform-origin: 0% 76px;
+  margin: 0% auto;
+}
+/*  se aplican los estilos a la clase del elemento que girará sobre sí mismo (efecto flip card)
+ en cuanto se pase el puntero por encima (hover).
+ También se define la rotación sobre sí mismo rotateX(180deg) cuando se le aplique la clase flip.*/
+.cardDesing:hover,
+.cardDesing.flip {
+  transform: rotateX(180deg);
+}
+/*  Se aplican los estilos a las clases que representas la parte delantera y trasera de las cartas
+se aplica la propiedad backface-visibility para ocultar la parte trasera de la tarjeta e inicializar la cara frontal con rotateX(0deg) 
+ y la trasera con rotateX(180deg) para que nunca se vean las 2 a la vez.*/
+.frontCard,
+.backCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+}
+/* 
+aqui se inicializa  la cara frontal con rotateX(0deg) 
+La propiedad CSS z-index indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos se superponen,
+ los elementos con mayor valor z-index cubren aquellos con menor valor.*/
+.frontCard {
+  transform: rotateX(0deg);
+  z-index: 2;
+  background: repeating-linear-gradient(
+    -45deg,
+    white,
+    #ececec 10px,
+    #dedede 10px,
+    #dedede 20px
+  );
+  font: 1em/1.8em Arial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* aqui se inicializa  trasera con rotate(180deg)  */
+.backCard {
+  transform: rotateX(180deg);
+  background-color: whitesmoke;
+  color: whitesmoke;
+}
+
+/*  Contenedor de imagenes como jugar */
+.boxHowtoPlay {
+  height: 400px;
+  width: 450px;
+  background-color: greenyellow;
+
+  display: flex;
+  order: 3;
+  margin-left: 600px;
+  margin-top: -650px;
+  justify-content: center;
+}
+.boxWordhowToplay {
+  display: flex;
+  background-color: transparent;
+  width: 500px;
+  align-content: center;
+  height: 150px;
+  padding: 40px;
+  margin-top: 280px;
+  align-content: center;
+
+  justify-content: center;
 }
