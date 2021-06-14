@@ -239,25 +239,67 @@ La propiedad CSS z-index indica el orden de un elemento posicionado y sus descen
 
 /*  Contenedor de imagenes como jugar */
 .boxHowtoPlay {
-  height: 400px;
+  height: 450px;
   width: 450px;
   background-color: greenyellow;
 
-  display: flex;
+  
   order: 3;
   margin-left: 600px;
-  margin-top: -650px;
+  margin-top: -665px;
   justify-content: center;
 }
 .boxWordhowToplay {
   display: flex;
   background-color: transparent;
   width: 500px;
+  height: 450px;
+  margin-top: -20px;
   align-content: center;
-  height: 150px;
-  padding: 40px;
-  margin-top: 280px;
+  justify-content: space-around;
+  order:3 ;
+  position: relative;
+  display:grid;
+  align-items: center;
+  margin: 0% auto;
+  padding-left: 30px;
+  padding-top: 16px;
+  margin-bottom: 500px;
+
+}
+/*.containerImg{
+  display: flex;
+  background-color:violet;
+  width: 1500px;
+  align-content: center;
+  height: 1600px;
+  margin-top: 240px;
   align-content: center;
 
   justify-content: center;
+}*/
+
+.ticket{
+  height: 80px;
+  width: 80px;
 }
+
+.equis{
+  height: 80px;
+  width: 80px;
+}
+
+.tortuga{
+  height: 100px;
+  width: 80px;
+  margin-left: 60px;
+  margin-top: 20px;
+  
+}
+.palabraComoJugar{
+  height: 80px;
+  width: 200px;
+  padding-right: 0px;
+ 
+}
+
