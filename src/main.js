@@ -4,6 +4,7 @@ import pokemones from '../data/pokemon/pokemon.js';
 
 //document.getElementById("root").appendChild(App());
 document.getElementById("buttonStart").addEventListener("click", buttonStart, false);
+document.getElementById("cardBase").addEventListener("click", clickCard, false);
 //var containerStepOne = document.getElementById("containerStepOne");
 //var containerStepTwo = document.getElementById("containerStepTwo");
 //containerStepOne.style = "display:none";
@@ -17,7 +18,17 @@ let cardBase = document.getElementById("cardBase");
 let cards = document.getElementById("cards");
 cardBase.style = "display:none";
 
+function clickCard(pokemonID){
+  console.log(pokemonID)
+  if (
+    pokemonID.includes("One")
+  ){
+    pokemonID.repleace("One","")
+  }
 
+
+
+}
 
 function buttonStart() {
   let click = "";
@@ -34,8 +45,18 @@ function buttonStart() {
     cards.appendChild(card);
     //console.log(card.children[0].children[0]);
     //console.log(pokemon);
+    document.getElementById(pokemon.id).addEventListener("click", function(){clickCard(pokemon.id)}, false);
 
   }
+
+ 
+    
+    
+  
+
+
+
+
   const FULL_DASH_ARRAY = 283;
   const WARNING_THRESHOLD = 10;
   const ALERT_THRESHOLD = 5;

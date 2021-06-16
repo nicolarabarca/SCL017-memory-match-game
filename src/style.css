@@ -118,8 +118,8 @@ body {
 }
 /*  Atributos imagen pokebola */
 .botonImagen {
-  width: 50%;
-  height: 70%;
+  width: 71%;
+  height: 130%;
 
   /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
   margin: -0% 5 0 -15%;
@@ -136,7 +136,7 @@ body {
 /*  atributospalabra  go/ play / jugar*/
 .WordGo {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
   margin: -6% 0 0 -11.5%;
@@ -160,7 +160,7 @@ body {
   display: flex;
   height: 10%;
   width: 10%;
-  background-color: rebeccapurple;
+  background-color: transparent;
   order: 1;
   margin-top: 0%;
   margin-left: 600px;
@@ -244,7 +244,6 @@ La propiedad CSS z-index indica el orden de un elemento posicionado y sus descen
   width: 450px;
   background-color: greenyellow;
 
-  
   order: 3;
   margin-left: 600px;
   margin-top: -665px;
@@ -258,15 +257,14 @@ La propiedad CSS z-index indica el orden de un elemento posicionado y sus descen
   margin-top: -20px;
   align-content: center;
   justify-content: space-around;
-  order:3 ;
+  order: 3;
   position: relative;
-  display:grid;
+  display: grid;
   align-items: center;
   margin: 0% auto;
   padding-left: 30px;
   padding-top: 16px;
   margin-bottom: 500px;
-
 }
 /*.containerImg{
   display: flex;
@@ -276,42 +274,37 @@ La propiedad CSS z-index indica el orden de un elemento posicionado y sus descen
   height: 1600px;
   margin-top: 240px;
   align-content: center;
-
   justify-content: center;
 }*/
 
-.ticket{
+.ticket {
   height: 80px;
   width: 80px;
   margin-left: 20px;
 }
 
-.equis{
+.equis {
   height: 70px;
   width: 70px;
   margin-left: 15px;
 }
 
-.tortuga{
+.tortuga {
   height: 100px;
   width: 80px;
   margin-left: 60px;
   margin-top: 20px;
-  
 }
-.palabraComoJugar{
+.palabraComoJugar {
   height: 80px;
   width: 200px;
   padding-right: 30px;
- 
 }
-
-
 
 .baseTimer {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .baseTimerSVG {
@@ -320,16 +313,16 @@ La propiedad CSS z-index indica el orden de un elemento posicionado y sus descen
 
 .baseTimerCircle {
   fill: none;
-  stroke: none;
+  stroke-dasharray: 283;
 }
 
 .baseTimerPathElapsed {
-  stroke-width: 7px;
-  stroke: grey;
+  stroke-width: 5px;
+  stroke: gray;
 }
 
 .baseTimerPathRemaining {
-  stroke-width: 7px;
+  stroke-width: 4px;
   stroke-linecap: round;
   transform: rotate(90deg);
   transform-origin: center;
@@ -338,15 +331,15 @@ La propiedad CSS z-index indica el orden de un elemento posicionado y sus descen
   stroke: currentColor;
 }
 
-baseTimerPathRemainingGREEN {
+.baseTimerPathRemainingGREEN {
   color: rgb(47, 236, 0);
 }
 
-baseTimerPathRemainingORANGE {
+.baseTimerPathRemainingORANGE {
   color: orange;
 }
 
-baseTimerPathRemainingRED {
+.baseTimerPathRemainingRED {
   color: red;
 }
 
@@ -358,5 +351,5 @@ baseTimerPathRemainingRED {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 48px;
+  font-size: 39px;
 }
