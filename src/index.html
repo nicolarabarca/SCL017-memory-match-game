@@ -6,10 +6,10 @@
       <link rel="stylesheet" href="style.css" />
       <meta
          name="viewport"
-         content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun.scale=1.0 "
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun.scale=1.0  "
          />
       <a href="https://fontmeme.com/es/fuente-pokemon/"></a>
-      <script src="main.js" type="module"></script>
+      <link rel="stylesheet" media="only screen and (max-width: 768px)" href="style.css">
    </head>
    <body id="root">
       <div id="pantalla1" style="display: block;">
@@ -28,62 +28,63 @@
             <div class="boxPokemon1">
                <img class="imgTwo" src="clipart967980.png" />
             </div>
+            
             <button id="buttonStart" class="closing, boxButton">
-               <p class="WordGo">
-                  <img
-                     src="https://fontmeme.com/permalink/210607/27ee703ff0a72da2b5db2f78a4c96393.png"
-                     />
-               </p>
+            
                <img class="botonImagen" src="pokebola.png" />
             </button>
-            
+            <script src="main.js" type="module"></script>
          </div>
       </div>
       <div id="pantalla2" style="display: none;">
-      <div id="containerStepTwo" class="containerFlextwo">
-         <div class="timer">
-            <div class="baseTimer">
+         <div id="containerStepTwo" class="containerFlextwo">
+            <div class="timer">   <div class="baseTimer">
                <svg class="baseTimerSVG" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <g class="baseTimerCircle">
-                     <circle class="baseTimerPathElapsed" cx="50" cy="50" r="45"></circle>
-                     <path
-                        id="baseTimerPathRemaining"
-                        stroke-dasharray="283"
-                        class="baseTimerPathRemaining ${remainingPathColor}"
-                        d="
-                        M 50, 50
-                        m -45, 0
-                        a 45,45 0 1,0 90,0
-                        a 45,45 0 1,0 -90,0
-                        "
-                        ></path>
-                  </g>
+                 <g class="baseTimerCircle">
+                   <circle class="baseTimerPathElapsed" cx="50" cy="50" r="45"></circle>
+                   <path
+                     id="baseTimerPathRemaining"
+                     stroke-dasharray="283"
+                     class="baseTimerPathRemaining ${remainingPathColor}"
+                     d="
+                       M 50, 50
+                       m -45, 0
+                       a 45,45 0 1,0 90,0
+                       a 45,45 0 1,0 -90,0
+                     "
+                   ></path>
+                 </g>
                </svg>
                <span id="baseTimerLabel" class="baseTimerLabelONE">
+                 
                </span>
+             </div>
+               </div>
+            
+
+            <div id="cards" class="boxCards"> 
+               <div  id="cardBase" class="cardDesing"> 
+               <p ><img class="backCard" src="https://fontmeme.com/permalink/210611/f66485b14d6579c58a847f4a39a45026.png"  > 
+                <img class="frontCard"  src="pngwing.com.png" ></p>
+               </div>
             </div>
-         </div>
-         <div id="cards" class="boxCards">
-            <div  id="cardBase" class="cardDesing">
-               <p><img class="backCard" src="https://fontmeme.com/permalink/210611/f66485b14d6579c58a847f4a39a45026.png"  > 
-                  <img class="frontCard"  src="pngwing.com.png" >
-               </p>
-            </div>
-         </div>
-         <div class="boxHowtoPlay">
-            <p class="boxWordhowToplay">
-               <b><img src="008.png"><img src="+2.png"><img src="008.png"><img src="=2 - copia.png"><img src="pulgares-hacia-arriba.png" class="ticket">
+            <div class="boxHowtoPlay"> <p class="boxWordhowToplay">
+               
+               <img src="https://fontmeme.com/permalink/210612/3196bc2870d25d7f1d446fc2904f3c3a.png" class="palabraComoJugar"> 
+               <b>
+               
+               <img src="008.png"><img src="+2.png"><img src="008.png"><img src="=2 - copia.png"><img src="pulgares-hacia-arriba.png" class="ticket">
                <b>  
                <img src="CHARMANDER.png">
-               <img src="+.png">
+               <img  src="+.png">
                <img src="WARTORTLE.png">
                <img src="=.png">
                <img src="aversion.png" class="equis">
                <b>
-               <img src="6-69297_squirtle-png.png" class="tortuga" >
-               <img src="https://fontmeme.com/permalink/210612/3196bc2870d25d7f1d446fc2904f3c3a.png" class="palabraComoJugar"> 
-            </p>
-         </div>
+               
+
+                </p>
+            </div>
       </div>
    </body>
    <footer class="footer">Derechos reservados @Nintendo</footer>
