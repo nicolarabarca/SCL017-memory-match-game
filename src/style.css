@@ -1,319 +1,358 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+
 /*fondo de pantalla */
+
 body {
-  min-height: 100vh;
-  background-image: url("FondoPokemon.jpeg");
-  margin: 0;
-  padding: 0;
-  display: flex;
+	min-height: 100vh;
+	background-image: url("FondoPokemon.jpeg");
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
+
 
 /*  caja que contiene todos los elemento de pantalla de inicio */
+
 .container {
-  width: 80%;
-  max-width: 100%;
-  margin: 0% auto;
-  overflow: hidden;
-  padding: 20px;
-  box-sizing: border-box;
+	width: 80%;
+	max-width: 100%;
+	margin: 0% auto;
+	overflow: hidden;
+	padding: 20px;
+	box-sizing: border-box;
 }
+
 
 /*  caja que contienela palabra pokemon */
+
 .boxImg {
-  width: 100%;
-  height: 60%;
-  background-color: transparent;
+	width: 100%;
+	height: 60%;
+	background-color: transparent;
 }
 
+
 /*  atributos imagen titulo pokemon */
+
 .img {
-  display: block;
-  width: 60%;
-  height: 40%;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	width: 60%;
+	height: 40%;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+
 /*  atributos imagen titulo Memory battle*/
+
 .imgMemory {
-  display: block;
-  margin: 0% auto;
-  width: 30%;
-  left: 30%;
+	display: block;
+	margin: 0% auto;
+	width: 30%;
+	left: 30%;
 }
+
+
 /*  caja que contiene a pikachu */
 
 .boxPokemon {
-  float: right;
-  width: 50%;
-  height: 50%;
-  background-color: transparent;
+	float: right;
+	width: 50%;
+	height: 50%;
+	background-color: transparent;
 }
+
+
 /*  atributos de imagen pikachu */
+
 .imgOne {
-  margin-left: auto;
-  margin-right: none;
-  display: block;
-  width: 50%;
-  height: 50%;
+	margin-left: auto;
+	margin-right: none;
+	display: block;
+	width: 50%;
+	height: 50%;
 }
+
 
 /*  caja que contiene a bolbasor */
+
 .boxPokemon1 {
-  background-color: transparent;
-  float: left;
-  width: 50%;
-  height: 50%;
-}
-/*  atributos de imagen bolbasor */
-.imgTwo {
-  margin-left: none;
-  display: block;
-  width: 50%;
-  height: 50%;
+	background-color: transparent;
+	float: left;
+	width: 50%;
+	height: 50%;
 }
 
-/*  caja que contiene el boton */
-.boxButton {
-  background-color: transparent;
-  border-width: 0px;
-  justify-content: center;
-  float: right;
-  margin-right: 250px;
-  vertical-align: top;
-  display: block;
+
+/*  atributos de imagen bolbasor */
+
+.imgTwo {
+	margin-left: none;
+	display: block;
+	width: 50%;
+	height: 50%;
 }
+
+
+/*  caja que contiene el boton */
+
+.boxButton {
+	background-color: transparent;
+	border-width: 0px;
+	justify-content: center;
+	float: right;
+	margin-right: 250px;
+	vertical-align: top;
+	display: block;
+}
+
+
 /*  estilo del boton */
 
 .closing {
-  outline-color: none;
-  border-radius: 0px;
-  overflow: hidden;
-  width: max-content;
-  height: max-content;
-  display: block;
+	outline-color: none;
+	border-radius: 0px;
+	overflow: hidden;
+	width: max-content;
+	height: max-content;
+	display: block;
 }
-/*  Atributos imagen pokebola */
-.botonImagen {
-  width: 40%;
-  height: 40%;
-  background-color: transparent;
-  justify-content: center;
-  margin-left: 25%;
-  margin-top: -50%;
-  vertical-align: top;
 
-  /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
-  display: block;
+
+/*  Atributos imagen pokebola */
+
+.botonImagen {
+	width: 40%;
+	height: 40%;
+	background-color: transparent;
+	justify-content: center;
+	margin-left: 25%;
+	margin-top: -50%;
+	vertical-align: top;
+	/* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+	display: block;
 }
+
 
 /*  texto piede pagina*/
+
 .footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  height: 30px;
-  width: 100%;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 30px;
+	width: 100%;
 }
+
+
 /*  atributospalabra  go/ play / jugar*/
+
 .WordGo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
-  margin: -6% 0 0 -11.5%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+	margin: -6% 0 0 -11.5%;
 }
+
 
 /*  caja que contiene todos los elemento de segunda pantalla */
+
 .containerFlextwo {
-  display: flex;
-  width: 100%;
-  height: 650px;
-  max-width: 100%;
-  margin: 0% auto;
-  justify-content: center;
-  flex-flow: row wrap;
-  background-color: #c4c4c4;
-  opacity: 0.75;
+	display: flex;
+	width: 100%;
+	height: 650px;
+	max-width: 100%;
+	margin: 0% auto;
+	justify-content: center;
+	flex-flow: row wrap;
+	background-color: #c4c4c4;
+	opacity: 0.75;
 }
+
 
 /*  Contenedor timer*/
+
 .timer {
-  display: flex;
-  height: 10%;
-  width: 10%;
-  background-color: rebeccapurple;
-  order: 1;
-  margin-top: 0%;
-  margin-left: 700px;
+	display: flex;
+	height: 10%;
+	width: 10%;
+	background-color: rebeccapurple;
+	order: 1;
+	margin-top: 0%;
+	margin-left: 700px;
 }
 
+
 /*  Contenedor de cartas*/
+
 .boxCards {
-  display: flex;
-  background-color: lightgray;
-  width: 600px;
-  height: 500px;
-  margin-right: 650px;
-  order: 2;
-  margin-top: 50px;
-  flex-wrap: wrap;
-  margin-bottom: 200px;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  padding: 50px;
+	display: flex;
+	background-color: lightgray;
+	width: 600px;
+	height: 500px;
+	margin-right: 650px;
+	order: 2;
+	margin-top: 50px;
+	flex-wrap: wrap;
+	margin-bottom: 200px;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	padding: 50px;
 }
+
+
 /*  Diseño de  cartas, Se define un tiempo de transición que mantenga el estilo 3D 
 y se definen las coordenadas dónde se aplicará el efecto */
+
 .cardDesing {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  transform-origin: 0% 76px;
-  margin: 0% auto;
+	position: relative;
+	width: 120px;
+	height: 120px;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	transform-origin: 0% 76px;
+	margin: 0% auto;
 }
+
+
 /*  se aplican los estilos a la clase del elemento que girará sobre sí mismo (efecto flip card)
  en cuanto se pase el puntero por encima (hover).
  También se define la rotación sobre sí mismo rotateX(180deg) cuando se le aplique la clase flip.*/
-.cardDesing:hover,
+
+/*.cardDesing:hover,
 .cardDesing.flip {
-  transform: rotateX(180deg);
-}
+	transform: rotateX(180deg);
+}*/
+
+
 /*  Se aplican los estilos a las clases que representas la parte delantera y trasera de las cartas
 se aplica la propiedad backface-visibility para ocultar la parte trasera de la tarjeta e inicializar la cara frontal con rotateX(0deg) 
  y la trasera con rotate(180deg) para que nunca se vean las 2 a la vez.*/
+
 .frontCard,
 .backCard {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+  transition: opacity 0.8s linear;
 }
+
 /*  Se aplican los estilos a las clases que representas la parte delantera y trasera de las cartas
 aqui se inicializa  la cara frontal con rotateX(0deg) 
 La propiedad CSS z-index indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos se superponen,
  los elementos con mayor valor z-index cubren aquellos con menor valor.*/
+
 .frontCard {
-  transform: rotateX(0deg);
-  z-index: 2;
-  background: repeating-linear-gradient(
-    -45deg,
-    white,
-    #ececec 10px,
-    #dedede 10px,
-    #dedede 20px
-  );
-  font: 1em/1.8em Arial;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: whitesmoke;
+	color: whitesmoke;
+	font: 1em/1.8em Arial;
+	display: block;
+	align-items: center;
+	justify-content: center;
+  /*transform: rotateX(83deg);*/
+  opacity: 0;
 }
+
+
 /*  Se aplican los estilos a las clases que representas la parte delantera y trasera de las cartas
 aqui se inicializa  trasera con rotate(180deg)  */
+
 .backCard {
-  transform: rotateX(180deg);
-  background-color: whitesmoke;
-  color: whitesmoke;
+  background: repeating-linear-gradient( -45deg, white, #ececec 10px, #dedede 10px, #dedede 20px);
+	opacity: 1;
 }
+
 
 /*  Contenedor de imagenes como jugar */
-.boxHowtoPlay {
-  height: 450px;
-  width: 450px;
-  background-color: greenyellow;
 
-  order: 3;
-  margin-left: 600px;
-  margin-top: -665px;
-  justify-content: center;
+.boxHowtoPlay {
+	height: 450px;
+	width: 450px;
+	background-color: greenyellow;
+	order: 3;
+	margin-left: 600px;
+	margin-top: -665px;
+	justify-content: center;
 }
+
 .boxWordhowToplay {
-  background-color: transparent;
-  width: 500px;
-  height: 450px;
-  margin-top: -30px;
-  align-content: center;
-  justify-content: space-around;
-  order: 3;
-  position: relative;
-  display: grid;
-  align-items: center;
-  margin: 0% auto;
-  padding-left: 30px;
-  padding-top: 10px;
-  margin-bottom: 500px;
-  position: absolute;
+	background-color: transparent;
+	width: 500px;
+	height: 450px;
+	margin-top: -30px;
+	align-content: center;
+	justify-content: space-around;
+	order: 3;
+	position: relative;
+	display: grid;
+	align-items: center;
+	margin: 0% auto;
+	padding-left: 30px;
+	padding-top: 10px;
+	margin-bottom: 500px;
+	position: absolute;
 }
 
 .ticket {
-  height: 80px;
-  width: 80px;
-  margin-left: 20px;
+	height: 80px;
+	width: 80px;
+	margin-left: 20px;
 }
 
 .equis {
-  height: 70px;
-  width: 70px;
-  margin-left: 15px;
+	height: 70px;
+	width: 70px;
+	margin-left: 15px;
 }
 
 .palabraComoJugar {
-  height: 80px;
-  width: 200px;
-  margin-top: -90px;
-  background-color: transparent;
-  margin-left: 105px;
+	height: 80px;
+	width: 200px;
+	margin-top: -90px;
+	background-color: transparent;
+	margin-left: 105px;
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
-    .img {
-      display: block;
-      width: 84%;
-      height: 61%;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-  .imgMemory {
-    display: block;
-    margin: 0% auto;
-    width: 60%;
-    left: 30%;
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+	.img {
+		display: block;
+		width: 84%;
+		height: 61%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.imgMemory {
+		display: block;
+		margin: 0% auto;
+		width: 60%;
+		left: 30%;
+	}
+	.imgOne {
+		margin-left: auto;
+		margin-right: none;
+		display: block;
+		width: 72%;
+		height: 79%;
+	}
+	.imgTwo {
+		display: block;
+		width: 69%;
+		height: 72%;
+		margin-top: 9px;
+	}
+	/*  Atributos imagen pokebola */
+	.botonImagen {
+		background-color: yellow;
+		height: 63px;
+		width: 76px;
+		display: flex;
+		margin-top: -7vh;
+		margin-right: 329px;
+	}
+	/* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
 }
-  .imgOne {
-    margin-left: auto;
-    margin-right: none;
-    display: block;
-    width: 72%;
-    height: 79%;
-}
-  .imgTwo {
-    display: block;
-    width: 69%;
-    height: 72%;
-    margin-top: 9px;
-}
-  
-  
-    /*  Atributos imagen pokebola */
-    .botonImagen {
-      background-color: yellow;
-      height: 63px;
-      width: 76px;
-      display: flex;
-      margin-top: -7vh;
-      margin-right: 329px;
-  }
-    
-      /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
-     
-    }
-  }
