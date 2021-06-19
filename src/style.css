@@ -507,7 +507,7 @@ and (-webkit-device-pixel-ratio : 3) {
 
 		
 	}
-/*Responsive Samsung Galaxy*/
+/*Responsive Samsung Galaxy
 	@media only screen 
     and (device-width : 360px) 
     and (device-height : 640px) 
@@ -546,4 +546,4 @@ and (-webkit-device-pixel-ratio : 3) {
     padding: 5px;
 
 
-	}
+	}*/
