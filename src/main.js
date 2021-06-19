@@ -37,17 +37,19 @@ let pokemonSelected = {};
 
 document.getElementById("app").innerHTML = startTimer();
 
+//clickCard (al hacer click en el pokemon) click card recibe el id del pokemon
 function clickCard(pokemonId) {
   // TODO: Llamar a otra función para comparar el pokemon actual con el anterior
   console.log(pokemonId);
   compareWithLastCard(pokemonId);
 }
 
+
 function compareWithLastCard(pokemonId) {
-  const lastPokemonSelected = pokemonSelected;
+  const lastPokemonSelected = pokemonSelected; 
   console.log("lastPokemonSelected: ", lastPokemonSelected);
   console.log("pokemonId: ", pokemonId);
-  const imgBackSelectorActualPokemon = "#" + pokemonId + " .imagesContainer .backCard";
+  const imgBackSelectorActualPokemon = "#" + pokemonId + " .imagesContainer .backCard"; 
   const imgFrontSelectorActualPokemon = "#" + pokemonId + " .imagesContainer .frontCard";
   
   if (
@@ -61,8 +63,8 @@ function compareWithLastCard(pokemonId) {
       const imgFrontSelectorLastPokemon =
       "#" + lastPokemonSelected.id + " .imagesContainer .frontCard";
       // Ocultar la parte trasera y mostrar los 2 pokemones iguales
-      document.querySelectorAll(imgBackSelectorActualPokemon)[0].style.opacity = "0";
-      document.querySelectorAll(imgFrontSelectorActualPokemon)[0].style.opacity = "1";
+      document.querySelectorAll(imgBackSelectorActualPokemon)[0].style.opacity = "0"; //none
+      document.querySelectorAll(imgFrontSelectorActualPokemon)[0].style.opacity = "1"; //block
       document.querySelectorAll(imgBackSelectorLastPokemon)[0].style.opacity = "0";
       if (document.querySelectorAll(imgFrontSelectorLastPokemon)[0]) {
         document.querySelectorAll(imgFrontSelectorLastPokemon)[0].style.opacity = "1";

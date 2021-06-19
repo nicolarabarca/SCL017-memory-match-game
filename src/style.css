@@ -7,7 +7,7 @@
 
 body {
 	min-height: 100vh;
-	background-image: url("FondoPokemon.jpeg");
+	background-image: url("/assets/FondoPokemon.jpeg");
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -96,45 +96,6 @@ body {
 	height: 50%;
 }
 
-
-/*  caja que contiene el boton */
-
-.boxButton {
-	background-color: transparent;
-	border-width: 0px;
-	justify-content: center;
-	float: right;
-	margin-right: 250px;
-	vertical-align: top;
-	display: block;
-}
-
-
-/*  estilo del boton */
-
-.closing {
-	outline-color: none;
-	border-radius: 0px;
-	overflow: hidden;
-	width: max-content;
-	height: max-content;
-	display: block;
-}
-
-
-/*  Atributos imagen pokebola */
-
-.botonImagen {
-	width: 40%;
-	height: 40%;
-	background-color: transparent;
-	justify-content: center;
-	margin-left: 25%;
-	margin-top: -50%;
-	vertical-align: top;
-	/* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
-	display: block;
-}
 
 
 /*  texto piede pagina*/
@@ -240,6 +201,7 @@ se aplica la propiedad backface-visibility para ocultar la parte trasera de la t
 	height: 100%;
 	text-align: center;
   transition: opacity 0.8s linear;
+  border-radius: 15%;
 }
 
 /*  Se aplican los estilos a las clases que representas la parte delantera y trasera de las cartas
@@ -318,41 +280,127 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	margin-left: 105px;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-	.img {
-		display: block;
-		width: 84%;
-		height: 61%;
-		margin-left: auto;
-		margin-right: auto;
+
+/*  caja que contiene el boton */
+.boxButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh;
+	margin-top: -200px;
+  }
+  .redondo {
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 50px;
+	margin-left: 25px;
+	position: relative;
+	
+	border-width: 0px;
+	background-color:black;
+	padding: 5px;
+	box-shadow: 0 9px black;
+  }
+  .imgBoton {
+    display: block;
+    width: 113px;
+    height: 114px;
+    border-radius: ;
+    position: relative;
+    margin-top: -11px;
+    margin-left: -11px;
+    border-width: 0px;
+    background-color: transparent;
+    padding: 5px;
+}
+  .redondo:active {
+	background-color: black;
+	box-shadow: 0 2px black;
+	transform: translateY(4px);
+  }
+  .pointer {
+    display: block;
+    width: 36%;
+    height: 43%;
+    margin-top: -35px;
+    margin-left: 52px;
+    position: relative;
+    top: 86%;
+    left: 38%;
+    border-width: 0px;
+    background-color: transparent;
+}
+ 
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+
+	.container {
+		width: 105%;
+		max-width: 100%;
+		overflow: hidden;
+		padding: 20px;
+		box-sizing: border-box;
+		margin-top: 14vh;
 	}
+
+	.redondo {
+		display: block;
+		width: 64px;
+		height: 63px;
+		border-radius: 50%;
+		margin-top: -43px;
+		margin-left: 25px;
+		position: relative;
+		border-width: 0px;
+		background-color: black;
+		padding: 5px;
+		box-shadow: 0 9px black;
+	}
+
+	.imgBoton {
+		display: block;
+		width: 77px;
+		height: 78px;
+		border-radius: ;
+		position: relative;
+		margin-top: -11px;
+		margin-left: -11px;
+		border-width: 0px;
+		background-color: transparent;
+		padding: 5px;
+	}
+
+	.pointer {
+		margin-left: 41px;
+		
+	}
+
+	.img {
+		width: 85%;
+
+	}
+
 	.imgMemory {
 		display: block;
 		margin: 0% auto;
-		width: 60%;
-		left: 30%;
+		width: 45%;
+		left: 37%;
+		margin-left: 106px;
 	}
+
 	.imgOne {
 		margin-left: auto;
 		margin-right: none;
 		display: block;
-		width: 72%;
-		height: 79%;
+		width: 64%;
+		height: 50%;
 	}
+
 	.imgTwo {
+		margin-left: none;
 		display: block;
-		width: 69%;
-		height: 72%;
-		margin-top: 9px;
+		width: 64%;
+		height: 50%;
 	}
-	/*  Atributos imagen pokebola */
-	.botonImagen {
-		background-color: yellow;
-		height: 63px;
-		width: 76px;
-		display: flex;
-		margin-top: -7vh;
-		margin-right: 329px;
 	}
-	/* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
-}
