@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8" />
-      <title>Memory Match</title>
-      <link rel="stylesheet" href="style.css" />
-      <meta
-         name="viewport"
-         content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun.scale=1.0  "
-         />
-      <a href="https://fontmeme.com/es/fuente-pokemon/"></a>
-      <link rel="stylesheet" media="only screen and (max-width: 768px)" href="style.css">
-   </head>
-   <body id="root">
-      <div id="pantalla1" style="display: block;">
-         <div id="containerStepOne" class="container">
-            <div class="boxImg">
-               <img class="img" src="/assets/pokemon.png" />
-               <div class="wordMemory">
-               <img
-                  class="imgMemory"
-                  src="https://fontmeme.com/permalink/210605/213031742f47ec44e796318d92459499.png"
-                  alt="fuente-pokemon"
-                  /></div>
+
+<head>
+   <meta charset="utf-8" />
+   <title>Memory Match</title>
+   <link rel="stylesheet" href="style.css" />
+   <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun.scale=1.0  " />
+   <a href="https://fontmeme.com/es/fuente-pokemon/"></a>
+   <link rel="stylesheet" media="only screen and (max-width: 768px)" href="style.css">
+</head>
+
+<body id="root">
+   <div id="pantalla1" style="display: block;">
+      <div id="containerStepOne" class="container">
+         <div class="boxImg">
+            <img class="img" src="/assets/pokemon.png" />
+            <div class="wordMemory">
+               <img class="imgMemory" src="https://fontmeme.com/permalink/210605/213031742f47ec44e796318d92459499.png"
+                  alt="fuente-pokemon" />
             </div>
-            <div class="boxPokemon">
-               <img class="imgOne" src="/assets/pi.png" />
-            </div>
-            <div class="boxPokemon1">
-               <img class="imgTwo" src="/assets/clipart967980.png" />
-            </div>
-            
-            <div class="boxButton">
-               <button id="buttonStart" class="redondo"><img class="imgBoton" src="/assets/botonpoke.png">
-                  <p > <img  class="pointer"src="/assets/click.png" ></p>
-               </button>
-            </div>
-            <script src="main.js" type="module"></script>
          </div>
+         <div class="boxPokemon">
+            <img class="imgOne" src="/assets/pi.png" />
+         </div>
+         <div class="boxPokemon1">
+            <img class="imgTwo" src="/assets/clipart967980.png" />
+         </div>
+
+         <div class="boxButton">
+            <img class="imgTwo" src="/assets/clipart967980.png" />
+            <button id="buttonStart" class="redondo"><img class="imgBoton" src="/assets/botonpoke.png">
+               <p> <img class="pointer" src="/assets/click.png"></p>
+            </button>
+         </div>
+         <script src="main.js" type="module"></script>
       </div>
-      <div id="pantalla2" style="display: none;">
-         <div id="containerStepTwo" class="containerFlextwo">
-            <div class="timer">   <div class="baseTimer">
+   </div>
+   <div id="pantalla2" style="display: none;">
+      <div id="containerStepTwo" class="containerFlextwo">
+         <div class="timer">
+            <div class="baseTimer">
                <svg class="baseTimerSVG" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                 <g class="baseTimerCircle">
-                   <circle class="baseTimerPathElapsed" cx="50" cy="50" r="45"></circle>
-                   <path
-                     id="baseTimerPathRemaining"
-                     stroke-dasharray="283"
-                     class="baseTimerPathRemaining ${remainingPathColor}"
-                     d="
+                  <g class="baseTimerCircle">
+                     <circle class="baseTimerPathElapsed" cx="50" cy="50" r="45"></circle>
+                     <path id="baseTimerPathRemaining" stroke-dasharray="283"
+                        class="baseTimerPathRemaining ${remainingPathColor}" d="
                        M 50, 50
                        m -45, 0
                        a 45,45 0 1,0 90,0
                        a 45,45 0 1,0 -90,0
-                     "
-                   ></path>
-                 </g>
+                     "></path>
+                  </g>
                </svg>
                <span id="baseTimerLabel" class="baseTimerLabelONE">
-                 
+
                </span>
-             </div>
-               </div>
-            
-
-            <div id="cards" class="boxCards"> 
-               <div  id="cardBase" class="cardDesing"> 
-                  <p class="imagesContainer">
-                     <img class="frontCard" src="https://fontmeme.com/permalink/210611/f66485b14d6579c58a847f4a39a45026.png"  > 
-                     <img class="backCard"  src="/assets/pngwing.com.png" >
-                  </p>
-               </div>
             </div>
-            <div class="boxHowtoPlay"> <p class="boxWordhowToplay">
-               
-               <img src="https://fontmeme.com/permalink/210612/3196bc2870d25d7f1d446fc2904f3c3a.png" class="palabraComoJugar"> 
-               <b>
-               
-               <img src="/assets/008.png"><img src="/assets/+2.png"><img src="/assets/008.png"><img src="/assets/=2 - copia.png"><img src="/assets/pulgares-hacia-arriba.png" class="ticket">
-               <b>  
-               <img src="/assets/CHARMANDER.png">
-               <img  src="/assets/+.png">
-               <img src="/assets/WARTORTLE.png">
-               <img src="/assets/=.png">
-               <img src="/assets/aversion.png" class="equis">
-               <b>
-               
+         </div>
 
-                </p>
+
+         <div id="cards" class="boxCards">
+            <div id="cardBase" class="cardDesing">
+               <p class="imagesContainer">
+                  <img class="frontCard"
+                     src="https://fontmeme.com/permalink/210611/f66485b14d6579c58a847f4a39a45026.png">
+                  <img class="backCard" src="/assets/pngwing.com.png">
+               </p>
             </div>
+         </div>
+         <div class="boxHowtoPlay">
+            <p class="boxWordhowToplay">
+
+               <img src="https://fontmeme.com/permalink/210612/3196bc2870d25d7f1d446fc2904f3c3a.png"
+                  class="palabraComoJugar">
+               <b>
+
+                  <img class="pokemonIn" src="/assets/008.png"><img class="plus" src="/assets/+2.png"><img class="pokemonIn"
+                     src="/assets/008.png"><img class="iqual" src="/assets/=2 - copia.png"><img src="/assets/pulgares-hacia-arriba.png"
+                     class="ticket">
+
+                  <img class="pokemonIn" src="/assets/CHARMANDER.png">
+                  <img class="plus" src="/assets/+.png">
+                  <img class="pokemonIn" src="/assets/WARTORTLE.png">
+                  <img class="iqual" src="/assets/=.png">
+                  <img class="equis" src="/assets/aversion.png" class="equis">
+               </b>
+
+
+            </p>
+         </div>
       </div>
-   </body>
-   <footer class="footer">Derechos reservados @Nintendo</footer>
+   </div>
+   <div id="pantalla3" style="display: none;">
+      hola soy pantalla tres con letras
+   </div>
+</body>
+
+<footer class="footer">Derechos reservados @Nintendo</footer>
+
 </html>
