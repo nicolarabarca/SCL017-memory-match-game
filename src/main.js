@@ -71,6 +71,9 @@ function flipCard(event) {
 					document.getElementById("pantalla2").style.display = "none";
 					document.getElementById("pantalla3").style.display = "block";
 					
+					  
+				
+					
 
 				}
 
@@ -123,13 +126,14 @@ function frontToBack(card) {
 	//card.classList.toggle('is-flipped');
 }
 
-//function reset() { 
-//	let click = "";
-//	console.log("funcionboton")
-//	document.getElementById("reset").addEventListener("click", flipCard, false);
-//	document.getElementById("pantalla1").style.display = "none";
-//	document.getElementById("pantalla2").style.display = "block";
-//	document.getElementById("pantalla3").style.display = "none";
+function reset() { 
+	let click = "";
+	console.log("funcionboton")
+	//document.getElementById("flipCard").reset();
+	document.getElementById("pantalla1").style.display = "none";
+	document.getElementById("pantalla2").style.display = "block";
+	document.getElementById("pantalla3").style.display = "none";
+	}
 
 
 function sleep(milliseconds) {
