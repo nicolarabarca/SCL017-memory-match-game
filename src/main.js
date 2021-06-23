@@ -3,17 +3,18 @@ import pokemones from "../data/pokemon/pokemon.js";
 
 document.getElementById("buttonStart").addEventListener("click", buttonStart, false);
 document.getElementById("cardBase").addEventListener("click", flipCard, false);
+document.getElementById("reset").addEventListener("click", reset, false);
 
 let cardBase = document.getElementById("cardBase");
 let cards = document.getElementById("cards");
 cardBase.style = "display:none";
-let flipCards = [];
-let wholeCards = pokemones.items.length;
-let countCard = 0;
+let flipCards = []; //cartas se den vuelta
+let wholeCards = pokemones.items.length;//totalidad de cartas pokemon.js 
+let countCard = 0; //contador, para inicializar se pone en 0
 
 
-
-function buttonStart() {
+//se inicia el juego, pasando de pantalla 1 a la 2
+function buttonStart() { 
 	let click = "";
 	console.log("funcionboton")
 	document.getElementById("pantalla1").style.display = "none";
@@ -21,13 +22,13 @@ function buttonStart() {
 	document.getElementById("pantalla3").style.display = "none";
 
 	console.log(pokemones);
-	for (let pokemon of pokemones.items) {
+	for (let pokemon of pokemones.items) { //aca se utiliza solo una carta que sirva para todos los pokemones
 		let card = cardBase.cloneNode(true);
 		card.id = pokemon.id;
-		card.children[0].children[0].src = pokemon.image;
-		card.style = "display:block";
-		card.addEventListener("click", flipCard, false);
-		cards.appendChild(card);
+		card.children[0].children[0].src = pokemon.image; // se llama el id de los pokemones para que pasen hacia delante dejando la imagen de pikachu negro por detras
+		card.style = "display:block"; //para dejar bloqueada la imagen
+		card.addEventListener("click", flipCard, false); //clickear carta y se gire
+		cards.appendChild(card); //asigna un hijo nuevo
 		//console.log(card.children[0].children[0]);
 		//console.log(pokemon);
 
@@ -40,21 +41,21 @@ function flipCard(event) {
 
 	console.log(event);
 
-	let idCard = event.target.parentNode.parentNode.id;
-	let card = document.getElementById(idCard);
+	let idCard = event.target.parentNode.parentNode.id; //evento click, target es la info de la carta
+	let card = document.getElementById(idCard); //llama id de carta
 	//console.log(card.children[0].children[0].className.indexOf("backCard"));
 
 
 	backToFront(card);
-	if (flipCards.length == 0) {
-		flipCards.push(idCard);
-	} else if (flipCards.length > 0) {
-		let idCardSave = flipCards[0];
-		flipCards = [];
+	if (flipCards.length == 0) { //dara vuelta la carta si la posicion es 0
+		flipCards.push(idCard); // guarda la carta en la var cardSave
+	} else if (flipCards.length > 0) { //si el largo es mayor a 0 da vuelta la segunda carta
+		let idCardSave = flipCards[0]; //carta 1 y 2 se comparan y si coinciden se dejan hacia arriba
+		flipCards = []; //es para volver a iniciar un nuevo par de cartas con el arreglo vacio
 		setTimeout(function () {
 			// console.log(idCardSave);
 			//console.log(idCard);
-			if (idCardSave.indexOf(idCard) == -1 && idCard.indexOf(idCardSave) == -1) {
+			if (idCardSave.indexOf(idCard) == -1 && idCard.indexOf(idCardSave) == -1) { //se compara id de pokemones
 				let cardSave = document.getElementById(idCardSave);
 
 				frontToBack(cardSave);
@@ -69,6 +70,7 @@ function flipCard(event) {
 					document.getElementById("pantalla1").style.display = "none";
 					document.getElementById("pantalla2").style.display = "none";
 					document.getElementById("pantalla3").style.display = "block";
+					
 
 				}
 
@@ -120,6 +122,15 @@ function frontToBack(card) {
 	}
 	//card.classList.toggle('is-flipped');
 }
+
+//function reset() { 
+//	let click = "";
+//	console.log("funcionboton")
+//	document.getElementById("reset").addEventListener("click", flipCard, false);
+//	document.getElementById("pantalla1").style.display = "none";
+//	document.getElementById("pantalla2").style.display = "block";
+//	document.getElementById("pantalla3").style.display = "none";
+
 
 function sleep(milliseconds) {
 	var start = new Date().getTime();

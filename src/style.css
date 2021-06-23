@@ -321,6 +321,149 @@ aqui se inicializa  trasera con rotate(180deg)  */
   border-width: 0px;
   background-color: transparent;
 }
+
+.containerFlexThree {
+	background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 195vh;
+    max-width: 100%;
+    height: 100%;
+    margin-left: 13%;
+    overflow: hidden;
+    padding: 5%;
+}
+.cajaGanaste {
+	width: 60%;
+	height: 17%;
+	background-color: transparent;
+	margin-left: 105px3*9;
+  }
+  
+  /*  atributos imagen titulo pokemon */
+  
+  .imgGanaste {
+    display: block;
+    width: 798px;
+    height: 143px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+/*caja Meow*/
+.CajaMeow {
+    background-color: transparent;
+    float: left;
+    width: 24%;
+    height: 50%;
+    order: 3;
+	margin-top: 117px;
+}
+  
+  /*  atributos de imagen meow */
+  
+.meow {
+	margin-left: none;
+	display: block;
+	width: 100%;
+	height: 97%;
+  }
+
+.EquipoRRRR {
+    height: 13%;
+    width: 60%;
+    order: 2;
+    margin-top: 324px;
+    background-color: transparent;
+    margin-left: 293px;
+}
+
+.boxR {
+    height: 29%;
+    width: 28%;
+    order: 2;
+    margin-top: -74px;
+    background-color: transparent;
+    margin-left: 488px;
+}
+.r{
+	width: 10%;
+	height: 30%;
+}
+.equipoRo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4vh;
+    margin-top: -236px;
+    width: 87%;
+    height: 99%;
+    order: 2;
+    margin-left: -3%;
+}
+/*Caja contenedora Pikachu*/
+.cajaPikachuFeliz {
+    float: right;
+    width: 24%;
+    height: 44%;
+    background-color: transparent;
+    order: 4;
+    margin-right: 198px;
+    margin-top: -13px;
+}
+  
+  /*  atributos de imagen pikachu feliz */
+  
+  .pikachuFeliz {
+	margin-left: auto;
+	margin-right: none;
+	display: block;
+	width: 94%;
+	height: 99%;
+  }
+.boxButtonTwo {
+    float: left;
+    width: 20%;
+    height: 20%;
+    background-color: transparent;
+    order: 5;
+    margin-top: 209px;
+    margin left: 30px;
+}
+
+.button {
+    box-shadow: 23px 20px 27px -5px #f0c30b;
+    background: linear-gradient(to bottom, transparent 5%, transparent 101%);
+    background-color: transparent;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: -33px 1px 0px #3d768a;
+    border: #f0c30b;
+    border-width: 4px;
+    border-color: #f0c30b;
+    border-style: solid;
+    width: 90%;
+    height: 69%;
+    margin-left: 45%;
+    margin-top: -48%;
+}
+
+.volveraJugar {
+    height: 100%;
+    width: 120%;
+    margin-right: -32px;
+    padding: 0%;
+    padding-right: 20%;
+
+}
   
   /*Responsive iPhone X*/
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
@@ -444,6 +587,8 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	  width: 120%;
 	}
   }
+ 
+  
   /*Responsive horizontal iPhone X*/
   @media only screen and (device-width: 812px) and (device-height: 375px) {
 	.container {
