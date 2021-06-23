@@ -18,8 +18,8 @@ function buttonStart() {
 	let click = "";
 	console.log("funcionboton")
 	document.getElementById("pantalla1").style.display = "none";
-	document.getElementById("pantalla2").style.display = "block";
-	document.getElementById("pantalla3").style.display = "none";
+	document.getElementById("pantalla2").style.display = "none";
+	document.getElementById("pantalla3").style.display = "block";
 
 	console.log(pokemones);
 	for (let pokemon of pokemones.items) { //aca se utiliza solo una carta que sirva para todos los pokemones
@@ -81,7 +81,7 @@ function flipCard(event) {
 			}
 
 
-		}, 500);
+		}, 1500);
 
 	}
 
@@ -128,11 +128,31 @@ function frontToBack(card) {
 
 function reset() { 
 	let click = "";
-	console.log("funcionboton")
+	removeAllChildNodes(cards);
+	for (let pokemon of pokemones.items) {
+		let card = cardBase.cloneNode(true);
+		card.id = pokemon.id;
+		card.children[0].children[0].src = pokemon.image;
+		card.style = "display:block";
+		card.addEventListener("click", flipCard, false);
+		cards.appendChild(card);
+		//console.log(card.children[0].children[0]);
+		//console.log(pokemon);
+	}
+	countCard = 0;
 	//document.getElementById("flipCard").reset();
 	document.getElementById("pantalla1").style.display = "none";
 	document.getElementById("pantalla2").style.display = "block";
 	document.getElementById("pantalla3").style.display = "none";
+	}
+
+
+	//borra los hijos (las cartas). parent es  un parametro que se  podria llamar de  cualquier forma. While 
+	//( mientras tenga un hijo, remuevelo). parent.removechild lo limpia
+function removeAllChildNodes(cardsOne) {
+		while (cardsOne.firstChild) {
+			cardsOne.removeChild(cardsOne.firstChild);
+		}
 	}
 
 
