@@ -18,8 +18,8 @@ function buttonStart() {
 	let click = "";
 	console.log("funcionboton")
 	document.getElementById("pantalla1").style.display = "none";
-	document.getElementById("pantalla2").style.display = "none";
-	document.getElementById("pantalla3").style.display = "block";
+	document.getElementById("pantalla2").style.display = "block";
+	document.getElementById("pantalla3").style.display = "none";
 
 	console.log(pokemones);
 	for (let pokemon of pokemones.items) { //aca se utiliza solo una carta que sirva para todos los pokemones
