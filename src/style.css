@@ -278,13 +278,13 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	margin-left: 20px;
 }
 
-.equis {
+.thumbsDown{
 	height: 12%;
 	width: 12%;
 	margin-left: 4%;
 }
 
-.palabraComoJugar {
+.boxWordhowToplayOne{
 	margin-top: 50%;
 	margin-left: 23%;
 	height: 30%;
@@ -302,7 +302,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	margin-top: -200px;
 }
 
-.redondo {
+.buttonStyle {
 	display: block;
 	width: 100px;
 	height: 100px;
@@ -328,7 +328,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	padding: 5px;
 }
 
-.redondo:active {
+.buttonStyle:active {
 	background-color: black;
 	box-shadow: 0 2px black;
 	transform: translateY(4px);
@@ -360,7 +360,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	padding: 5%;
 }
 
-.cajaGanaste {
+.boxWin {
 	width: 60%;
 	height: 17%;
 	background-color: transparent;
@@ -369,7 +369,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 
 /*  atributos imagen titulo pokemon */
 
-.imgGanaste {
+.imgWin {
 	display: block;
 	width: 798px;
 	height: 143px;
@@ -380,7 +380,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 
 /*caja Meow*/
 
-.CajaMeow {
+.boxMeow {
 	background-color: transparent;
 	float: left;
 	width: 24%;
@@ -399,7 +399,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	height: 97%;
 }
 
-.EquipoRRRR {
+.teamRocket {
 	height: 13%;
 	width: 60%;
 	order: 2;
@@ -422,7 +422,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	height: 30%;
 }
 
-.equipoRo {
+.teamRocketOne {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -437,7 +437,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 
 /*Caja contenedora Pikachu*/
 
-.cajaPikachuFeliz {
+.pikachuBoxtwo{
 	float: right;
 	width: 24%;
 	height: 44%;
@@ -450,7 +450,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 
 /*  atributos de imagen pikachu feliz */
 
-.pikachuFeliz {
+.smilingPikachu{
 	margin-left: auto;
 	margin-right: none;
 	display: block;
@@ -491,7 +491,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	margin-top: -48%;
 }
 
-.volveraJugar {
+.playAgain{
 	height: 100%;
 	width: 120%;
 	margin-right: -32px;
@@ -511,7 +511,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 		box-sizing: border-box;
 		margin-top: 14vh;
 	}
-	.redondo {
+	.buttonStyle {
 		display: block;
 		width: 64px;
 		height: 63px;
@@ -601,12 +601,12 @@ aqui se inicializa  trasera con rotate(180deg)  */
 		width: 15%;
 		margin-left: 20px;
 	}
-	.equis {
+	.thumbsDown{
 		height: 12%;
 		width: 12%;
 		margin-left: 4%;
 	}
-	.palabraComoJugar {
+	.boxWordhowToplayOne{
 		margin-top: 48%;
 		margin-left: 54%;
 		height: 60%;
@@ -653,7 +653,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 		margin-left: -20px;
 		margin-top: -11px;
 	}
-	.redondo {
+	.buttonStyle {
 		width: 30px;
 		height: 30px;
 		margin-left: 0px;
@@ -714,7 +714,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 		min-height: 4vh;
 		margin-top: -3%;
 	}
-	.redondo {
+	.buttonStyle {
 		width: 70px;
 		height: 63px;
 	}
@@ -767,7 +767,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 		margin-top: 10vh;
 	}
 	
-	.cajaGanaste {
+	.boxWin {
 		width: 60%;
 		height: 17%;
 		background-color: transparent;
@@ -777,7 +777,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	
 	/*  atributos imagen titulo pokemon */
 	
-	.imgGanaste {
+	.imgWin {
 		display: block;
 		width: 607px;
 		height: 143px;
@@ -788,7 +788,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	
 	/*caja Meow*/
 	
-	.CajaMeow {
+	.boxMeow {
 		background-color: transparent;
 		float: left;
 		width: 24%;
@@ -807,7 +807,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 		height: 63%;
 	}
 	
-	.EquipoRRRR {
+	.teamRocket {
 		height: 8%;
 		width: 92%;
 		order: 2;
@@ -832,7 +832,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 		margin-top: 17px;
 	}
 	
-	.equipoRo {
+	.teamRocketOne {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -847,7 +847,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	
 	/*Caja contenedora Pikachu*/
 	
-	.cajaPikachuFeliz {
+	.pikachuBoxtwo{
 		float: right;
 		width: 24%;
 		height: 44%;
@@ -860,7 +860,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	
 	/*  atributos de imagen pikachu feliz */
 	
-	.pikachuFeliz {
+	.smilingPikachu{
 		margin-left: 72px;
 		margin-right: none;
 		display: block;
@@ -902,7 +902,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 		margin-top: -48%;
 	}
 	
-	.volveraJugar {
+	.playAgain{
 		height: 100%;
 		width: 120%;
 		margin-right: -32px;
@@ -1120,12 +1120,12 @@ aqui se inicializa  trasera con rotate(180deg)  */
 		width: 15%;
 		margin-left: 20px;
 	}
-	.equis {
+	.thumbsDown{
 		height: 12%;
 		width: 12%;
 		margin-left: 4%;
 	}
-	.palabraComoJugar {
+	.boxWordhowToplayOne{
 		margin-top: 50%;
 		margin-left: 23%;
 		height: 30%;
@@ -1139,7 +1139,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 		min-height: 80vh;
 		margin-top: -200px;
 	}
-	.redondo {
+	.buttonStyle {
 		display: block;
 		width: 100px;
 		height: 100px;
@@ -1163,7 +1163,7 @@ aqui se inicializa  trasera con rotate(180deg)  */
 		background-color: transparent;
 		padding: 5px;
 	}
-	.redondo:active {
+	.buttonStyle:active {
 		background-color: black;
 		box-shadow: 0 2px black;
 		transform: translateY(4px);

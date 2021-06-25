@@ -1,4 +1,3 @@
-import pokemon from "../data/pokemon/pokemon.js";
 
 const App = () => {
   const el = document.createElement("div");
