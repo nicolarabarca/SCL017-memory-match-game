@@ -1,38 +1,41 @@
-# Data (sets de cartas)
+# Memory Match  Battle.
 
-Este directorio (carpeta) contiene dos fuentes de datos (sets de cartas) que
-podemos usar en el proyecto. Cada set está en una sub-carpeta distinta:
+Creacion de app web llamada validacion de tarjeta credito para que sea utilizada en tienda dedicada a la venta de insumo de mascotas, esta debe generar confianza y a la vez resguardar la confidencialidad de los datos ingresados. \_
 
-* [`pokemon`](./pokemon)
-* [`webdev`](./webdev)
+### Lenguaje utilizado
 
-Dentro de cada carpeta encontrarás dos archivos: uno con la extensión `.js` y
-otro `.json`. Ambos archivos contienen la misma data; la diferencia es que el
-`.js` lo usaremos a través de un [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import),
-mientras que el `.json` está ahí para opcionalmente cargar la data de forma
-asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API).
+---
 
-## ¿Cómo agrego mis propios sets de cartas?
+- HTML
+- CSS
+- JavaScript
 
-Éstas no son las únicas cartas que podemos usar. Si quieres puedes añadir los
-sets de cartas que consideres para tu aplicación. Si eliges agregar sets de
-cartas te recomendamos mantener la misma estructura de los datos (ambos sets de
-ejemplo usan la misma estructura).
+### Definición del producto.
+Memorama o juego de la memoria corresponde a  un juego de mesa en este caso virtual con una baraja de cartas específicas. El objetivo consiste en encontrar los pares con la misma figura impresa utilizando la memoria.
 
-Por ejmplo, imaginemos que queremos agregar un set de cartas de gatitos. Para
-hacernos la vida más fácil, dupliquemos un set existente y modifiquémoslo:
+### Documentacion inicial de prototipo.
 
-```sh
-# Desde el directorio raíz de la aplicación en el terminal, copiamos
-# recursivamente (con la opción `-r`, ya que se trata de un directorio) el
-# directorio `data/pokemon` a la ruta `data/gatitos`.
-cp -r data/pokemon data/gatitos
+_Diseño prototipo de baja fidelidad juego de memoria en conjunto con usuario.
 
-# Renombramos los archivos de la carpeta gatitos...
-mv data/gatitos/pokemon.js data/gatitos/gatitos.js
-mv data/gatitos/pokemon.json data/gatitos/gatitos.json
-```
+![prototipo](https://github.com/nicolarabarca/SCL017-memory-match-game/blob/master/src/assets/prototipo%20de%20baja%20fidelidad.jpg)
 
-Ahora ya puedes editar el contenido de los archivos de gatitos según tus
-necesidades. Ten en cuenta que puedes cambiar el número de elementos (cartas) en
-cada set si quieres también cambiar la dificultad del juego :wink:.
+
+#### Historias de Usuario.
+
+- .xxxxxxxx
+
+##### Documentacion Prototipo Final
+
+![prototipo](https://github.com/nicolarabarca/SCL017-card-validation/blob/master/src/imagenes/prototipo.jpg)
+
+###### Objetivos Personales
+---
+
+- Realizar Pull request. 
+- Manejo de AddListener.
+- Manejo de eventos del DOM.
+- Mejorar manejo de HTML y CSS Flex.
+
+# Enlace proyecto
+
+- Si deseas  ver  nuestro proyecto  puedes  ingresar al siguiente enlace : https://nicolarabarca.github.io/SCL017-card-validation/

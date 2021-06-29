@@ -1,4 +1,5 @@
 import pokemones from "./data/pokemon/pokemon.js";
+import App from './components/App.js';
 
 document.getElementById("buttonStart").addEventListener("click", buttonStart, false);
 document.getElementById("cardBase").addEventListener("click", flipCard, false);
@@ -10,6 +11,7 @@ cardBase.style = "display:none";
 let flipCards = []; //cartas se den vuelta
 let wholeCards = pokemones.items.length;//totalidad de cartas pokemon.js 
 let countCard = 0; //contador, para inicializar se pone en 0
+let app = new App();
 
 
 //se inicia el juego, pasando de pantalla 1 a la 2
@@ -17,8 +19,8 @@ function buttonStart() {
 
 	
 	document.getElementById("screenOne").style.display = "none";
-	document.getElementById("screenTwo").style.display = "none";
-	document.getElementById("screenThree").style.display = "block";
+	document.getElementById("screenTwo").style.display = "block";
+	document.getElementById("screenThree").style.display = "none";
 
 	
 	for (let pokemon of pokemones.items) { //aca se utiliza solo una carta que sirva para todos los pokemones
@@ -44,84 +46,57 @@ function flipCard(event) {
 	let card = document.getElementById(idCard); //llama id de carta
 	//console.log(card.children[0].children[0].className.indexOf("backCard"));
 
-
-	backToFront(card);
+	
+	
 	if (flipCards.length == 0) { //dara vuelta la carta si la posicion es 0
+		app.backToFront(card);
 		flipCards.push(idCard); // guarda la carta en la var cardSave
 	} else if (flipCards.length > 0) { //si el largo es mayor a 0 da vuelta la segunda carta
 		let idCardSave = flipCards[0]; //carta 1 y 2 se comparan y si coinciden se dejan hacia arriba
-		flipCards = []; //es para volver a iniciar un nuevo par de cartas con el arreglo vacio
-		setTimeout(function () {
-			// console.log(idCardSave);
-			//console.log(idCard);
-			if (idCardSave.indexOf(idCard) == -1 && idCard.indexOf(idCardSave) == -1) { //se compara id de pokemones
-				let cardSave = document.getElementById(idCardSave);
+		if(idCardSave!==idCard){
+			app.backToFront(card);
+			flipCards = []; //es para volver a iniciar un nuevo par de cartas con el arreglo vacio
+			setTimeout(function () {
+				// console.log(idCardSave);
+				//console.log(idCard);
+				if (idCardSave.indexOf(idCard) == -1 && idCard.indexOf(idCardSave) == -1) { //se compara id de pokemones
+					let cardSave = document.getElementById(idCardSave);
 
-				frontToBack(cardSave);
-				frontToBack(card);
-		
+					app.frontToBack(cardSave);
+					app.frontToBack(card);
+			
 
-			}
-			else {
-				countCard = countCard + 2;
-				
-				if (countCard == wholeCards) {
-					document.getElementById("screenOne").style.display = "none";
-					document.getElementById("screenTwo").style.display = "block";
-					document.getElementById("screenThree").style.display = "none";
+				}
+				else {
+					countCard = countCard + 2;
+					
+					if (countCard == wholeCards) {
+						document.getElementById("screenOne").style.display = "none";
+						document.getElementById("screenTwo").style.display = "none";
+						document.getElementById("screenThree").style.display = "block";
 
 
 
+
+
+					}
 
 
 				}
 
 
-			}
-
-
-		}, 1500);
-
-	}
-
-
-}
-
-function backToFront(card) {
-
-	if (card.children[0].children[0].className.indexOf("frontCard") > -1) {
-
-		card.children[0].children[0].classList = [];
-		card.children[0].children[0].classList.add('backCard');
-
-		if (card.children[0].children[1].className.indexOf("backCard") > -1) {
-			card.classList.toggle('is-flipped');
-			card.children[0].children[1].classList = [];
-			card.children[0].children[1].classList.add('frontCard');
+			}, 1500);
 		}
-		//console.log(card.children[0].children[0].className);
+
 	}
-	//card.classList.toggle('is-flipped');
+
+
 }
 
-function frontToBack(card) {
-
-	if (card.children[0].children[0].className.indexOf("backCard") > -1) {
-		card.children[0].children[0].classList = [];
-		card.children[0].children[0].classList.add('frontCard');
-
-		if (card.children[0].children[1].className.indexOf("frontCard") > -1) {
-			card.classList.toggle('is-flipped');
-			card.children[0].children[1].classList = [];
-			card.children[0].children[1].classList.add('backCard');
-		}
-	}
-	//card.classList.toggle('is-flipped');
-}
 
 function reset() {
 	
-	removeAllChildNodes(cards);
+	app.removeAllChildNodes(cards);
 	for (let pokemon of pokemones.items) {
 		let card = cardBase.cloneNode(true);
 		card.id = pokemon.id;
@@ -142,17 +117,13 @@ function reset() {
 
 //borra los hijos (las cartas). parent es  un parametro que se  podria llamar de  cualquier forma. While 
 //( mientras tenga un hijo, remuevelo). parent.removechild lo limpia
-function removeAllChildNodes(cardsOne) {
-	while (cardsOne.firstChild) {
-		cardsOne.removeChild(cardsOne.firstChild);
-	}
-}
+
 
 const main = {
   buttonStart,
   flipCard,
-  backToFront,
-  frontToBack,
+  //backToFront,
+  //frontToBack,
   reset,
 };
 
