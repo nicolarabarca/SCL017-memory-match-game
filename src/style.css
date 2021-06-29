@@ -1,164 +1,187 @@
 * {
 	box-sizing: border-box;
-  }
+}
+
+
 /*fondo de pantalla */
 
 body {
-  min-height: 100vh;
-  background-image: url("assets/FondoPokemon.jpeg");
-  margin: 0;
-  padding: 0;
-  display: flex;
+	min-height: 100vh;
+	background-image: url("assets/FondoPokemon.jpeg");
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
+
 
 /*  caja que contiene todos los elemento de pantalla de inicio */
 
 .container {
-  width: 80%;
-  max-width: 100%;
-  margin: 0% auto;
-  overflow: hidden;
-  padding: 20px;
-  box-sizing: border-box;
+	width: 80%;
+	max-width: 100%;
+	margin: 0% auto;
+	overflow: hidden;
+	padding: 20px;
+	box-sizing: border-box;
 }
+
 
 /*  caja que contienela palabra pokemon */
+
 .boxImg {
-  width: 100%;
-  height: 60%;
-  background-color: transparent;
+	width: 100%;
+	height: 60%;
+	background-color: transparent;
 }
 
+
 /*  atributos imagen titulo pokemon */
+
 .img {
-  display: block;
-  width: 60%;
-  height: 40%;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	width: 60%;
+	height: 40%;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 
 /*  atributos imagen titulo Memory battle*/
 
 .imgMemory {
-  display: block;
-  margin: 0% auto;
-  width: 30%;
-  left: 30%;
+	display: block;
+	margin: 0% auto;
+	width: 30%;
+	left: 30%;
 }
+
+
 /*  caja que contiene a pikachu */
 
 .boxPokemon {
-  float: right;
-  width: 50%;
-  height: 50%;
-  background-color: transparent;
+	float: right;
+	width: 50%;
+	height: 50%;
+	background-color: transparent;
 }
+
 
 /*  atributos de imagen pikachu */
 
 .imgOne {
-  margin-left: auto;
-  margin-right: none;
-  display: block;
-  width: 50%;
-  height: 50%;
+	margin-left: auto;
+	margin-right: none;
+	display: block;
+	width: 50%;
+	height: 50%;
 }
 
+
 /*  caja que contiene a bolbasor */
+
 .boxPokemon1 {
-  background-color: transparent;
-  float: left;
-  width: 50%;
-  height: 50%;
+	background-color: transparent;
+	float: left;
+	width: 50%;
+	height: 50%;
 }
+
 
 /*  atributos de imagen bolbasor */
 
 .imgTwo {
-  margin-left: none;
-  display: block;
-  width: 50%;
-  height: 50%;
+	margin-left: none;
+	display: block;
+	width: 50%;
+	height: 50%;
 }
+
 
 /*  texto piede pagina*/
 
 .footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  height: 30px;
-  width: 100%;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 30px;
+	width: 100%;
 }
 
+
 /*  atributospalabra  go/ play / jugar*/
+
 
 /*  caja que contiene todos los elemento de segunda pantalla */
 
 .containerFlextwo {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  background-color: #c4c4c4;
-  opacity: 0.75;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  margin-left: 2%;
-  overflow: hidden;
-  padding: 5%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	background-color: transparent;
+	opacity: 0.75;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	margin-left: 2%;
+	overflow: hidden;
+	padding: 5%;
 }
+
 
 /*  Contenedor timer*/
 
 .timer {
-  display: flex;
-  height: 5%;
-  width: 10%;
-  background-color: rebeccapurple;
-  order: 1;
-  margin-left: 70%;
+	display: flex;
+	height: 5%;
+	width: 10%;
+	background-color: rebeccapurple;
+	order: 1;
+	margin-left: 70%;
 }
+
 
 /*  Contenedor de cartas*/
 
 .boxCards {
-  display: flex;
-  background-color: lightgray;
-  width: 49%;
-  height: 50%;
-  margin-right: 45%;
-  order: 2;
-  margin-top: 5%;
-  flex-wrap: wrap;
-  margin-bottom: 30%;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  padding: 2%;
+	display: flex;
+	background-color: lightgray;
+	width: 49%;
+	height: 50%;
+	margin-right: 45%;
+	order: 2;
+	margin-top: 5%;
+	flex-wrap: wrap;
+	margin-bottom: 30%;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	padding: 2%;
 }
+
 
 /*  Diseño de  cartas, Se define un tiempo de transición que mantenga el estilo 3D 
 y se definen las coordenadas dónde se aplicará el efecto */
 
 .cardDesing {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  transform-origin: 0% 76px;
-  margin: 0% auto;
+	position: relative;
+	width: 120px;
+	height: 120px;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	transform-origin: 0% 76px;
+	margin: 0% auto;
 }
+
 
 /*  se aplican los estilos a la clase del elemento que girará sobre sí mismo (efecto flip card)
  en cuanto se pase el puntero por encima (hover).
  También se define la rotación sobre sí mismo rotateX(180deg) cuando se le aplique la clase flip.*/
 
+
 /*.cardDesing:hover,
 .cardDesing.flip {
 	transform: rotateX(180deg);
 }*/
+
 
 /*  Se aplican los estilos a las clases que representas la parte delantera y trasera de las cartas
 se aplica la propiedad backface-visibility para ocultar la parte trasera de la tarjeta e inicializar la cara frontal con rotateX(0deg) 
@@ -166,13 +189,14 @@ se aplica la propiedad backface-visibility para ocultar la parte trasera de la t
 
 .frontCard,
 .backCard {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  text-align: center;
-  transition: opacity 0.8s linear;
-  border-radius: 15%;
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	text-align: center;
+	transition: opacity 0.8s linear;
+	border-radius: 15%;
 }
+
 
 /*  Se aplican los estilos a las clases que representas la parte delantera y trasera de las cartas
 aqui se inicializa  la cara frontal con rotateX(0deg) 
@@ -180,940 +204,1003 @@ La propiedad CSS z-index indica el orden de un elemento posicionado y sus descen
  los elementos con mayor valor z-index cubren aquellos con menor valor.*/
 
 .frontCard {
-  background-color: whitesmoke;
-  color: whitesmoke;
-  font: 1em/1.8em Arial;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  /*transform: rotateX(83deg);*/
-  opacity: 0;
+	background-color: whitesmoke;
+	color: whitesmoke;
+	font: 1em/1.8em Arial;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	/*transform: rotateX(83deg);*/
+	opacity: 0;
 }
+
 
 /*  Se aplican los estilos a las clases que representas la parte delantera y trasera de las cartas
 aqui se inicializa  trasera con rotate(180deg)  */
 
 .backCard {
-  background: repeating-linear-gradient(
-    -45deg,
-    white,
-    #ececec 10px,
-    #dedede 10px,
-    #dedede 20px
-  );
-  opacity: 1;
+	background: repeating-linear-gradient( -45deg, white, #ececec 10px, #dedede 10px, #dedede 20px);
+	opacity: 1;
 }
+
 .is-flipped {
 	transform: rotateX(360deg);
 }
+
+
 /*  Contenedor de imagenes como jugar */
 
 .boxHowtoPlay {
-  height: 35%;
-  width: 30%;
-  background-color: greenyellow;
-  order: 3;
-  margin-left: 50%;
-  margin-top: -60%;
-  justify-content: center;
+	height: 35%;
+	width: 30%;
+	background-color: greenyellow;
+	order: 3;
+	margin-left: 50%;
+	margin-top: -60%;
+	justify-content: center;
 }
 
 .boxWordhowToplay {
-  background-color: transparent;
-  width: 25%;
-  height: 12.5%;
-  margin-top: -10%;
-
-  align-content: center;
-  order: 3;
-  position: relative;
-  display: grid;
-  align-items: center;
-  margin: 0% auto;
-  padding-left: 2%;
-  padding-top: 5%;
-  margin-bottom: 5%;
-  position: absolute;
+	background-color: transparent;
+	width: 25%;
+	height: 12.5%;
+	margin-top: -10%;
+	align-content: center;
+	order: 3;
+	position: relative;
+	display: grid;
+	align-items: center;
+	margin: 0% auto;
+	padding-left: 2%;
+	padding-top: 5%;
+	margin-bottom: 5%;
+	position: absolute;
 }
+
 .pokemonIn {
-  height: 30%;
-  width: 30%;
+	height: 30%;
+	width: 30%;
 }
+
 .plus {
-  height: 6%;
-  width: 6%;
+	height: 6%;
+	width: 6%;
 }
+
 .iqual {
-  height: 6%;
-  width: 6%;
+	height: 6%;
+	width: 6%;
 }
+
 .ticket {
-  height: 15%;
-  width: 15%;
-  margin-left: 20px;
+	height: 15%;
+	width: 15%;
+	margin-left: 20px;
 }
 
-.equis {
-  height: 12%;
-  width: 12%;
-  margin-left: 4%;
+.thumbsDown{
+	height: 12%;
+	width: 12%;
+	margin-left: 4%;
 }
 
-.palabraComoJugar {
-  margin-top: 50%;
-  margin-left: 23%;
-  height: 30%;
-  width: 60%;
+.boxWordhowToplayOne{
+	margin-top: 50%;
+	margin-left: 23%;
+	height: 30%;
+	width: 60%;
 }
+
 
 /*  caja que contiene el boton */
+
 .boxButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 80vh;
-  margin-top: -200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh;
+	margin-top: -200px;
 }
-.redondo {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-top: 50px;
-  margin-left: 25px;
-  position: relative;
 
-  border-width: 0px;
-  background-color: black;
-  padding: 5px;
-  box-shadow: 0 9px black;
+.buttonStyle {
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 50px;
+	margin-left: 25px;
+	position: relative;
+	border-width: 0px;
+	background-color: black;
+	padding: 5px;
+	box-shadow: 0 9px black;
 }
+
 .imgBoton {
-  display: block;
-  width: 113px;
-  height: 114px;
+	display: block;
+	width: 113px;
+	height: 114px;
+	position: relative;
+	margin-top: -11px;
+	margin-left: -11px;
+	border-width: 0px;
+	background-color: transparent;
+	padding: 5px;
+}
 
-  position: relative;
-  margin-top: -11px;
-  margin-left: -11px;
-  border-width: 0px;
-  background-color: transparent;
-  padding: 5px;
+.buttonStyle:active {
+	background-color: black;
+	box-shadow: 0 2px black;
+	transform: translateY(4px);
 }
-.redondo:active {
-  background-color: black;
-  box-shadow: 0 2px black;
-  transform: translateY(4px);
-}
+
 .pointer {
-  display: block;
-  width: 36%;
-  height: 43%;
-  margin-top: -35px;
-  margin-left: 52px;
-  position: relative;
-  top: 86%;
-  left: 38%;
-  border-width: 0px;
-  background-color: transparent;
+	display: block;
+	width: 36%;
+	height: 43%;
+	margin-top: -35px;
+	margin-left: 52px;
+	position: relative;
+	top: 86%;
+	left: 38%;
+	border-width: 0px;
+	background-color: transparent;
 }
 
 .containerFlexThree {
 	background-color: transparent;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    width: 195vh;
-    max-width: 100%;
-    height: 100%;
-    margin-left: 13%;
-    overflow: hidden;
-    padding: 5%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	width: 195vh;
+	max-width: 100%;
+	height: 100%;
+	margin-left: 13%;
+	overflow: hidden;
+	padding: 5%;
 }
-.cajaGanaste {
+
+.boxWin {
 	width: 60%;
 	height: 17%;
 	background-color: transparent;
-	margin-left: 105px3*9;
-  }
-  
-  /*  atributos imagen titulo pokemon */
-  
-  .imgGanaste {
-    display: block;
-    width: 798px;
-    height: 143px;
-    margin-left: auto;
-    margin-right: auto;
 }
-  
+
+
+/*  atributos imagen titulo pokemon */
+
+.imgWin {
+	display: block;
+	width: 798px;
+	height: 143px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
 /*caja Meow*/
-.CajaMeow {
-    background-color: transparent;
-    float: left;
-    width: 24%;
-    height: 50%;
-    order: 3;
+
+.boxMeow {
+	background-color: transparent;
+	float: left;
+	width: 24%;
+	height: 50%;
+	order: 3;
 	margin-top: 117px;
 }
-  
-  /*  atributos de imagen meow */
-  
+
+
+/*  atributos de imagen meow */
+
 .meow {
 	margin-left: none;
 	display: block;
 	width: 100%;
 	height: 97%;
-  }
+}
 
-.EquipoRRRR {
-    height: 13%;
-    width: 60%;
-    order: 2;
-    margin-top: 324px;
-    background-color: transparent;
-    margin-left: 293px;
+.teamRocket {
+	height: 13%;
+	width: 60%;
+	order: 2;
+	margin-top: 324px;
+	background-color: transparent;
+	margin-left: 293px;
 }
 
 .boxR {
-    height: 29%;
-    width: 28%;
-    order: 2;
-    margin-top: -74px;
-    background-color: transparent;
-    margin-left: 488px;
+	height: 29%;
+	width: 28%;
+	order: 2;
+	margin-top: -74px;
+	background-color: transparent;
+	margin-left: 488px;
 }
-.r{
+
+.r {
 	width: 10%;
 	height: 30%;
 }
-.equipoRo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 4vh;
-    margin-top: -236px;
-    width: 87%;
-    height: 99%;
-    order: 2;
-    margin-left: -3%;
+
+.teamRocketOne {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 4vh;
+	margin-top: -236px;
+	width: 87%;
+	height: 99%;
+	order: 2;
+	margin-left: -3%;
 }
+
+
 /*Caja contenedora Pikachu*/
-.cajaPikachuFeliz {
-    float: right;
-    width: 24%;
-    height: 44%;
-    background-color: transparent;
-    order: 4;
-    margin-right: 198px;
-    margin-top: -13px;
+
+.pikachuBoxtwo{
+	float: right;
+	width: 24%;
+	height: 44%;
+	background-color: transparent;
+	order: 4;
+	margin-right: 198px;
+	margin-top: -13px;
 }
-  
-  /*  atributos de imagen pikachu feliz */
-  
-  .pikachuFeliz {
+
+
+/*  atributos de imagen pikachu feliz */
+
+.smilingPikachu{
 	margin-left: auto;
 	margin-right: none;
 	display: block;
 	width: 94%;
 	height: 99%;
-  }
+}
+
 .boxButtonTwo {
-    float: left;
-    width: 20%;
-    height: 20%;
-    background-color: transparent;
-    order: 5;
-    margin-top: 209px;
-    margin left: 30px;
+	float: left;
+	width: 20%;
+	height: 20%;
+	background-color: transparent;
+	order: 5;
+	margin-top: 209px;
 }
 
 .button {
-    box-shadow: 23px 20px 27px -5px #f0c30b;
-    background: linear-gradient(to bottom, transparent 5%, transparent 101%);
-    background-color: transparent;
-    border-radius: 8px;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 11px;
-    font-weight: bold;
-    padding: 13px 32px;
-    text-decoration: none;
-    text-shadow: -33px 1px 0px #3d768a;
-    border: #f0c30b;
-    border-width: 4px;
-    border-color: #f0c30b;
-    border-style: solid;
-    width: 90%;
-    height: 69%;
-    margin-left: 45%;
-    margin-top: -48%;
+	box-shadow: 23px 20px 27px -5px #f0c30b;
+	background: linear-gradient(to bottom, transparent 5%, transparent 101%);
+	background-color: transparent;
+	border-radius: 8px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 13px 32px;
+	text-decoration: none;
+	text-shadow: -33px 1px 0px #3d768a;
+	border: #f0c30b;
+	border-width: 4px;
+	border-color: #f0c30b;
+	border-style: solid;
+	width: 90%;
+	height: 69%;
+	margin-left: 45%;
+	margin-top: -48%;
 }
 
-.volveraJugar {
-    height: 100%;
-    width: 120%;
-    margin-right: -32px;
-    padding: 0%;
-    padding-right: 20%;
-
+.playAgain{
+	height: 100%;
+	width: 120%;
+	margin-right: -32px;
+	padding: 0%;
+	padding-right: 20%;
 }
-  
-  /*Responsive iPhone X*/
-  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+
+/*Responsive iPhone X*/
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
 	.container {
-	  width: 105%;
-	  max-width: 100%;
-	  overflow: hidden;
-	  padding: 20px;
-	  box-sizing: border-box;
-	  margin-top: 14vh;
+		width: 105%;
+		max-width: 100%;
+		overflow: hidden;
+		padding: 20px;
+		box-sizing: border-box;
+		margin-top: 14vh;
 	}
-  
-	.redondo {
-	  display: block;
-	  width: 64px;
-	  height: 63px;
-	  border-radius: 50%;
-	  margin-top: -43px;
-	  margin-left: 25px;
-	  position: relative;
-	  border-width: 0px;
-	  background-color: black;
-	  padding: 5px;
-	  box-shadow: 0 9px black;
+	.buttonStyle {
+		display: block;
+		width: 64px;
+		height: 63px;
+		border-radius: 50%;
+		margin-top: -43px;
+		margin-left: 25px;
+		position: relative;
+		border-width: 0px;
+		background-color: black;
+		padding: 5px;
+		box-shadow: 0 9px black;
 	}
-  
 	.imgBoton {
-	  display: block;
-	  width: 77px;
-	  height: 78px;
-  
-	  position: relative;
-	  margin-top: -11px;
-	  margin-left: -11px;
-	  border-width: 0px;
-	  background-color: transparent;
-	  padding: 5px;
+		display: block;
+		width: 77px;
+		height: 78px;
+		position: relative;
+		margin-top: -11px;
+		margin-left: -11px;
+		border-width: 0px;
+		background-color: transparent;
+		padding: 5px;
 	}
-  
 	.pointer {
-	  margin-left: 41px;
+		margin-left: 41px;
 	}
-  
 	.img {
-	  width: 85%;
+		width: 85%;
 	}
-  
 	.imgMemory {
-	  display: block;
-	  margin: 0% auto;
-	  width: 45%;
-	  left: 37%;
-	  margin-left: 106px;
+		display: block;
+		margin: 0% auto;
+		width: 45%;
+		left: 37%;
+		margin-left: 106px;
 	}
-  
 	.imgOne {
-	  margin-left: auto;
-	  margin-right: none;
-	  display: block;
-	  width: 64%;
-	  height: 50%;
+		margin-left: auto;
+		margin-right: none;
+		display: block;
+		width: 64%;
+		height: 50%;
 	}
-  
 	.imgTwo {
-	  margin-left: none;
-	  display: block;
-	  width: 64%;
-	  height: 50%;
+		margin-left: none;
+		display: block;
+		width: 64%;
+		height: 50%;
 	}
 	.boxCards {
-	  display: flex;
-	  background-color: lightgray;
-	  width: 50%;
-	  height: 50%;
-	  margin-right: 45%;
-	  order: 3;
-	  margin-top: 5%;
-	  flex-wrap: wrap;
-	  margin-bottom: 30%;
-	  -webkit-perspective: 1000px;
-	  perspective: 1000px;
-	  padding: 2%;
+		display: flex;
+		background-color: lightgray;
+		width: 50%;
+		height: 50%;
+		margin-right: 45%;
+		order: 3;
+		margin-top: 5%;
+		flex-wrap: wrap;
+		margin-bottom: 30%;
+		-webkit-perspective: 1000px;
+		perspective: 1000px;
+		padding: 2%;
 	}
 	.boxHowtoPlay {
-	  height: 10%;
-	  width: 59%;
-	  background-color: greenyellow;
-	  order: 3;
-	  margin-left: 2%;
-	  margin-top: -386%;
-	  justify-content: center;
+		height: 10%;
+		width: 59%;
+		background-color: greenyellow;
+		order: 3;
+		margin-left: 2%;
+		margin-top: -386%;
+		justify-content: center;
 	}
 	.pokemonIn {
-	  height: 30%;
-	  width: 30%;
+		height: 30%;
+		width: 30%;
 	}
 	.plus {
-	  height: 6%;
-	  width: 6%;
+		height: 6%;
+		width: 6%;
 	}
 	.iqual {
-	  height: 6%;
-	  width: 6%;
+		height: 6%;
+		width: 6%;
 	}
 	.ticket {
-	  height: 15%;
-	  width: 15%;
-	  margin-left: 20px;
+		height: 15%;
+		width: 15%;
+		margin-left: 20px;
 	}
-  
-	.equis {
-	  height: 12%;
-	  width: 12%;
-	  margin-left: 4%;
+	.thumbsDown{
+		height: 12%;
+		width: 12%;
+		margin-left: 4%;
 	}
-  
-	.palabraComoJugar {
-	  margin-top: 48%;
-	  margin-left: 54%;
-	  height: 60%;
-	  width: 120%;
+	.boxWordhowToplayOne{
+		margin-top: 48%;
+		margin-left: 54%;
+		height: 60%;
+		width: 120%;
 	}
-  }
- 
-  
-  /*Responsive horizontal iPhone X*/
-  @media only screen and (device-width: 812px) and (device-height: 375px) {
+}
+
+
+/*Responsive horizontal iPhone X*/
+
+@media only screen and (device-width: 812px) and (device-height: 375px) {
 	.container {
-	  margin-top: 5vh;
-	  height: 84%;
-	  width: 60%;
+		margin-top: 5vh;
+		height: 84%;
+		width: 60%;
 	}
-  
 	.wordMemory {
-	  width: 50%;
-	  height: 25%;
-	  background-color: transparent;
-	  margin: 0% auto;
+		width: 50%;
+		height: 25%;
+		background-color: transparent;
+		margin: 0% auto;
 	}
-  
 	.boxImg {
-	  width: 56%;
-	  height: 46%;
-	  margin-left: 25%;
+		width: 56%;
+		height: 46%;
+		margin-left: 25%;
 	}
-  
 	.img {
-	  width: 120%;
-	  height: 60%;
-	  margin-left: -26%;
-	  margin-top: -35px;
-	  padding-top: 15px;
+		width: 120%;
+		height: 60%;
+		margin-left: -26%;
+		margin-top: -35px;
+		padding-top: 15px;
 	}
 	.imgMemory {
-	  height: 70%;
-	  width: 140%;
-	  float: right;
-	  margin-left: -120px;
+		height: 70%;
+		width: 140%;
+		float: right;
+		margin-left: -120px;
 	}
-  
 	.imgBoton {
-	  width: 50px;
-	  height: 55x;
-	  margin-left: -20px;
-	  margin-top: -11px;
+		width: 50px;
+		height: 55x;
+		margin-left: -20px;
+		margin-top: -11px;
 	}
-  
-	.redondo {
-	  width: 30px;
-	  height: 30px;
-	  margin-left: 0px;
-	  margin-top: -147px;
+	.buttonStyle {
+		width: 30px;
+		height: 30px;
+		margin-left: 0px;
+		margin-top: -147px;
 	}
-  
 	.imgOne {
-	  margin-left: 90px;
-	  margin-right: none;
-	  width: 65%;
-	  height: 90%;
-	  margin-top: -59px;
+		margin-left: 90px;
+		margin-right: none;
+		width: 65%;
+		height: 90%;
+		margin-top: -59px;
 	}
-  
 	.imgTwo {
-	  margin-left: none;
-	  display: block;
-	  width: 60%;
-	  height: 65%;
-	  margin-top: -31px;
+		margin-left: none;
+		display: block;
+		width: 60%;
+		height: 65%;
+		margin-top: -31px;
 	}
 	/*  Contenedor de cartas*/
-  
-  
-  }
-  
-  @media only screen and (device-width: 768px) {
+}
+
+@media only screen and (device-width: 768px) {
 	/* For general iPad layouts */
 	.container {
-	  margin-top: 2vh;
+		margin-top: 2vh;
 	}
-  
 	.imgMemory {
-	  float: left;
-	  margin-left: 190px;
+		float: left;
+		margin-left: 190px;
 	}
 	.containerFlextwo {
-	  margin-top: 0vh;
-	  height: 100%;
-	  width: 100%;
+		margin-top: 0vh;
+		height: 100%;
+		width: 100%;
+		margin-left: 0%;
+		background-color: transparent;
 	}
 	.boxCards {
-	  width: 57%;
-	  height: 30%;
-	  margin-top: -17%;
-	  padding: 4%;
+		width: 78%;
+		height: 50%;
+		margin-top: 6%;
+		padding: 4%;
+		order: 3;
+		margin-right: 20px;
+		padding-left: 8%;
+		padding-top: 6%;
 	}
 	.cardDesing {
-	  width: 80px;
-	  height: 80px;
-	  transition: 0.6s;
+		width: 114px;
+		height: 114px;
+		transition: 0.6s;
 	}
 	.imgMemory {
-	  margin-left: 225px;
+		margin-left: 225px;
 	}
 	.boxButton {
-	  min-height: 4vh;
-	  margin-top: -3%;
+		min-height: 4vh;
+		margin-top: -3%;
 	}
-  
-	.redondo {
-	  width: 70px;
-	  height: 63px;
+	.buttonStyle {
+		width: 70px;
+		height: 63px;
 	}
-  
 	.imgBoton {
-	  width: 80px;
-	  height: 80px;
-	  margin-left: -9px;
+		width: 80px;
+		height: 80px;
+		margin-left: -9px;
 	}
 	.container {
-	  margin-top: 16vh;
+		margin-top: 16vh;
 	}
 	.boxHowtoPlay {
-	  height: 25%;
-	  width: 30%;
-	  background-color: greenyellow;
-	  order: 3;
-	  margin-left: 60%;
-	  margin-top: -92%;
-	  justify-content: center;
+		height: 30%;
+		width: 55%;
+		background-color: greenyellow;
+		order: 2;
+		margin-left: -4%;
+		margin-top: 5%;
+		justify-content: center;
 	}
-  }
-  
-  
-  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
-	/* For portrait layouts only */
-	.container {
-	  margin-top: 2vh;
+
+	.boxWordhowToplay {
+		background-color: transparent;
+		width: 38%;
+		height: 10.5%;
+		margin-top: -10%;
+		align-content: center;
+		order: 3;
+		position: relative;
+		display: grid;
+		align-items: center;
+		margin: 0% auto;
+		padding-left: 0%;
+		padding-top: 2%;
+		margin-bottom: 5%;
+		position: absolute;
+		margin-left: 44px;
 	}
-  
-	.imgMemory {
-	  float: left;
-	  margin-left: 190px;
+	.containerFlexThree {
+		background-color: transparent;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		width: 62vh;
+		max-width: 100%;
+		height: 83%;
+		margin-left: 13%;
+		overflow: hidden;
+		padding: 5%;
+		margin-top: 10vh;
 	}
-	.containerFlextwo {
-	  margin-top: 0vh;
-	  height: 100%;
-	  width: 100%;
+	
+	.boxWin {
+		width: 60%;
+		height: 17%;
+		background-color: transparent;
+		margin-left: 105px3*9;
 	}
-	.boxCards {
-	  width: 60%;
-	  height: 31%;
-	  margin-top: -20%;
-	  padding: 1%;
-	}
-	.cardDesing {
-	  width: 90px;
-	  height: 90px;
-	  transition: 0.6s;
-	}
-	.imgMemory {
-	  margin-left: 225px;
-	}
-	.boxButton {
-	  min-height: 4vh;
-	  margin-top: -3%;
-	}
-  
-	.redondo {
-	  width: 70px;
-	  height: 63px;
-	}
-  
-	.imgBoton {
-	  width: 80px;
-	  height: 80px;
-	  margin-left: -9px;
-	}
-	.container {
-	  margin-top: 16vh;
-	}
-	.boxHowtoPlay {
-	  height: 25%;
-	  width: 30%;
-	  background-color: greenyellow;
-	  order: 3;
-	  margin-left: 60%;
-	  margin-top: -92%;
-	  justify-content: center;
-	}
-  }
-  
-  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
-	/* For landscape layouts only */
-  
-	body {
-	  min-height: 100vh;
-	  background-image: url("/assets/FondoPokemon.jpeg");
-	  margin: 0;
-	  padding: 0;
-	  display: flex;
-	}
-  
-	/*  caja que contiene todos los elemento de pantalla de inicio */
-  
-	.container {
-	  width: 80%;
-	  max-width: 100%;
-	  margin: 0% auto;
-	  overflow: hidden;
-	  padding: 20px;
-	  box-sizing: border-box;
-	}
-  
-	/*  caja que contienela palabra pokemon */
-  
-	.boxImg {
-	  width: 100%;
-	  height: 60%;
-	  background-color: transparent;
-	}
-  
+	
+	
 	/*  atributos imagen titulo pokemon */
-  
+	
+	.imgWin {
+		display: block;
+		width: 607px;
+		height: 143px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+	/*caja Meow*/
+	
+	.boxMeow {
+		background-color: transparent;
+		float: left;
+		width: 24%;
+		height: 50%;
+		order: 3;
+		margin-top: 117px;
+	}
+	
+	
+	/*  atributos de imagen meow */
+	
+	.meow {
+		margin-left: none;
+		display: block;
+		width: 179%;
+		height: 63%;
+	}
+	
+	.teamRocket {
+		height: 8%;
+		width: 92%;
+		order: 2;
+		margin-top: 324px;
+		background-color: transparent;
+		margin-left: 148px;
+	}
+	
+	.boxR {
+		height: 29%;
+		width: 28%;
+		order: 2;
+		margin-top: -74px;
+		background-color: transparent;
+		margin-left: 488px;
+	}
+	
+	.r {
+		width: 14%;
+		height: 19%;
+		margin-left: -235px;
+		margin-top: 17px;
+	}
+	
+	.teamRocketOne {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 4vh;
+		margin-top: -236px;
+		width: 87%;
+		height: 99%;
+		order: 2;
+		margin-left: -3%;
+	}
+	
+	
+	/*Caja contenedora Pikachu*/
+	
+	.pikachuBoxtwo{
+		float: right;
+		width: 24%;
+		height: 44%;
+		background-color: transparent;
+		order: 4;
+		margin-right: 198px;
+		margin-top: -13px;
+	}
+	
+	
+	/*  atributos de imagen pikachu feliz */
+	
+	.smilingPikachu{
+		margin-left: 72px;
+		margin-right: none;
+		display: block;
+		width: 182%;
+		height: 84%;
+		margin-top: -21px;
+	}
+	
+	.boxButtonTwo {
+		float: left;
+		width: 37%;
+		height: 16%;
+		background-color: transparent;
+		order: 5;
+		margin-top: -19px;
+	}
+	
+	.button {
+		box-shadow: 23px 20px 27px -5px #f0c30b;
+		background: linear-gradient(to bottom, transparent 5%, transparent 101%);
+		background-color: transparent;
+		border-radius: 8px;
+		display: inline-block;
+		cursor: pointer;
+		color: #ffffff;
+		font-family: Arial;
+		font-size: 11px;
+		font-weight: bold;
+		padding: 13px 32px;
+		text-decoration: none;
+		text-shadow: -33px 1px 0px #3d768a;
+		border: #f0c30b;
+		border-width: 4px;
+		border-color: #f0c30b;
+		border-style: solid;
+		width: 90%;
+		height: 69%;
+		margin-left: 45%;
+		margin-top: -48%;
+	}
+	
+	.playAgain{
+		height: 100%;
+		width: 120%;
+		margin-right: -32px;
+		padding: 0%;
+		padding-right: 20%;
+	}
+}
+
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+	/* For landscape layouts only */
+	body {
+		min-height: 100vh;
+		background-image: url("/assets/FondoPokemon.jpeg");
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+	/*  caja que contiene todos los elemento de pantalla de inicio */
+	.container {
+		width: 80%;
+		max-width: 100%;
+		margin: 0% auto;
+		overflow: hidden;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	/*  caja que contienela palabra pokemon */
+	.boxImg {
+		width: 100%;
+		height: 60%;
+		background-color: transparent;
+	}
+	/*  atributos imagen titulo pokemon */
 	.img {
-	  display: block;
-	  width: 60%;
-	  height: 40%;
-	  margin-left: auto;
-	  margin-right: auto;
+		display: block;
+		width: 60%;
+		height: 40%;
+		margin-left: auto;
+		margin-right: auto;
 	}
-  
 	/*  atributos imagen titulo Memory battle*/
-  
 	.imgMemory {
-	  display: block;
-	  margin: 0% auto;
-	  width: 30%;
-	  left: 30%;
+		display: block;
+		margin: 0% auto;
+		width: 30%;
+		left: 30%;
 	}
-  
 	/*  caja que contiene a pikachu */
-  
 	.boxPokemon {
-	  float: right;
-	  width: 50%;
-	  height: 50%;
-	  background-color: transparent;
+		float: right;
+		width: 50%;
+		height: 50%;
+		background-color: transparent;
 	}
-  
 	/*  atributos de imagen pikachu */
-  
 	.imgOne {
-	  margin-left: auto;
-	  margin-right: none;
-	  display: block;
-	  width: 50%;
-	  height: 50%;
+		margin-left: auto;
+		margin-right: none;
+		display: block;
+		width: 50%;
+		height: 50%;
 	}
-  
 	/*  caja que contiene a bolbasor */
-  
 	.boxPokemon1 {
-	  background-color: transparent;
-	  float: left;
-	  width: 50%;
-	  height: 50%;
+		background-color: transparent;
+		float: left;
+		width: 50%;
+		height: 50%;
 	}
-  
 	/*  atributos de imagen bolbasor */
-  
 	.imgTwo {
-	  margin-left: none;
-	  display: block;
-	  width: 50%;
-	  height: 50%;
+		margin-left: none;
+		display: block;
+		width: 50%;
+		height: 50%;
 	}
-  
 	/*  texto piede pagina*/
-  
 	.footer {
-	  position: fixed;
-	  left: 0px;
-	  bottom: 0px;
-	  height: 30px;
-	  width: 100%;
+		position: fixed;
+		left: 0px;
+		bottom: 0px;
+		height: 30px;
+		width: 100%;
 	}
-  
 	/*  atributospalabra  go/ play / jugar*/
-  
 	/*  caja que contiene todos los elemento de segunda pantalla */
-  
 	.containerFlextwo {
-	  display: flex;
-	  justify-content: center;
-	  flex-flow: row wrap;
-	  background-color: #c4c4c4;
-	  opacity: 0.75;
-	  width: 100%;
-	  max-width: 100%;
-	  height: 100%;
-  
-	  overflow: hidden;
-	  padding: 5%;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		background-color: transparent;
+		opacity: 0.75;
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		overflow: hidden;
+		padding: 5%;
 	}
-  
 	/*  Contenedor timer*/
-  
 	.timer {
-	  display: flex;
-	  height: 5%;
-	  width: 10%;
-	  background-color: rebeccapurple;
-	  order: 1;
-	  margin-left: 70%;
+		display: flex;
+		height: 5%;
+		width: 10%;
+		background-color: rebeccapurple;
+		order: 1;
+		margin-left: 70%;
 	}
-  
 	/*  Contenedor de cartas*/
-  
 	.boxCards {
-	  display: flex;
-	  background-color: lightgray;
-	  width: 64%;
-	  height: 50%;
-	  margin-right: 38%;
-	  order: 2;
-	  margin-top: 5%;
-	  flex-wrap: wrap;
-	  margin-bottom: 29%;
-	  -webkit-perspective: 1000px;
-	  perspective: 1000px;
-	  padding-left: 7%;
+		display: flex;
+		background-color: lightgray;
+		width: 64%;
+		height: 50%;
+		margin-right: 38%;
+		order: 2;
+		margin-top: 5%;
+		flex-wrap: wrap;
+		margin-bottom: 29%;
+		-webkit-perspective: 1000px;
+		perspective: 1000px;
+		padding-left: 7%;
 	}
-  
 	/*  Diseño de  cartas, Se define un tiempo de transición que mantenga el estilo 3D 
   y se definen las coordenadas dónde se aplicará el efecto */
-  
 	.cardDesing {
-	  position: relative;
-	  width: 120px;
-	  height: 120px;
-	  transition: 0.6s;
-	  transform-style: preserve-3d;
-	  transform-origin: 0% 76px;
-	  margin: 0% auto;
+		position: relative;
+		width: 120px;
+		height: 120px;
+		transition: 0.6s;
+		transform-style: preserve-3d;
+		transform-origin: 0% 76px;
+		margin: 0% auto;
 	}
-  
 	/*  se aplican los estilos a la clase del elemento que girará sobre sí mismo (efecto flip card)
    en cuanto se pase el puntero por encima (hover).
    También se define la rotación sobre sí mismo rotateX(180deg) cuando se le aplique la clase flip.*/
-  
 	/*.cardDesing:hover,
   .cardDesing.flip {
 	  transform: rotateX(180deg);
   }*/
-  
 	/*  Se aplican los estilos a las clases que representas la parte delantera y trasera de las cartas
   se aplica la propiedad backface-visibility para ocultar la parte trasera de la tarjeta e inicializar la cara frontal con rotateX(0deg) 
    y la trasera con rotate(180deg) para que nunca se vean las 2 a la vez.*/
-  
 	.frontCard,
 	.backCard {
-	  position: absolute;
-	  width: 65%;
-	  height: 65%;
-	  text-align: center;
-	  transition: opacity 0.8s linear;
-	  border-radius: 15%;
+		position: absolute;
+		width: 65%;
+		height: 65%;
+		text-align: center;
+		transition: opacity 0.8s linear;
+		border-radius: 15%;
 	}
-  
 	/*  Se aplican los estilos a las clases que representas la parte delantera y trasera de las cartas
   aqui se inicializa  la cara frontal con rotateX(0deg) 
   La propiedad CSS z-index indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos se superponen,
    los elementos con mayor valor z-index cubren aquellos con menor valor.*/
-  
 	.frontCard {
-	  background-color: whitesmoke;
-	  color: whitesmoke;
-	  font: 1em/1.8em Arial;
-	  display: block;
-	  align-items: center;
-	  justify-content: center;
-	  /*transform: rotateX(83deg);*/
-	  opacity: 0;
+		background-color: whitesmoke;
+		color: whitesmoke;
+		font: 1em/1.8em Arial;
+		display: block;
+		align-items: center;
+		justify-content: center;
+		/*transform: rotateX(83deg);*/
+		opacity: 0;
 	}
-  
 	/*  Se aplican los estilos a las clases que representas la parte delantera y trasera de las cartas
   aqui se inicializa  trasera con rotate(180deg)  */
-  
 	.backCard {
-	  background: repeating-linear-gradient(
-		-45deg,
-		white,
-		#ececec 10px,
-		#dedede 10px,
-		#dedede 20px
-	  );
-	  opacity: 1;
+		background: repeating-linear-gradient( -45deg, white, #ececec 10px, #dedede 10px, #dedede 20px);
+		opacity: 1;
 	}
-  
 	/*  Contenedor de imagenes como jugar */
-  
 	.boxHowtoPlay {
-	  height: 35%;
-	  width: 30%;
-	  background-color: greenyellow;
-	  order: 3;
-	  margin-left: 61%;
-	  margin-top: -66%;
-	  justify-content: center;
+		height: 35%;
+		width: 30%;
+		background-color: greenyellow;
+		order: 3;
+		margin-left: 61%;
+		margin-top: -66%;
+		justify-content: center;
 	}
-  
 	.boxWordhowToplay {
-	  background-color: transparent;
-	  width: 25%;
-	  height: 12.5%;
-	  margin-top: -10%;
-  
-	  align-content: center;
-	  order: 3;
-	  position: relative;
-	  display: grid;
-	  align-items: center;
-	  margin: 0% auto;
-	  padding-left: 2%;
-	  padding-top: 5%;
-	  margin-bottom: 5%;
-	  position: absolute;
+		background-color: transparent;
+		width: 25%;
+		height: 12.5%;
+		margin-top: -10%;
+		align-content: center;
+		order: 3;
+		position: relative;
+		display: grid;
+		align-items: center;
+		margin: 0% auto;
+		padding-left: 2%;
+		padding-top: 5%;
+		margin-bottom: 5%;
+		position: absolute;
 	}
 	.pokemonIn {
-	  height: 30%;
-	  width: 30%;
+		height: 30%;
+		width: 30%;
 	}
 	.plus {
-	  height: 6%;
-	  width: 6%;
+		height: 6%;
+		width: 6%;
 	}
 	.iqual {
-	  height: 6%;
-	  width: 6%;
+		height: 6%;
+		width: 6%;
 	}
 	.ticket {
-	  height: 15%;
-	  width: 15%;
-	  margin-left: 20px;
+		height: 15%;
+		width: 15%;
+		margin-left: 20px;
 	}
-  
-	.equis {
-	  height: 12%;
-	  width: 12%;
-	  margin-left: 4%;
+	.thumbsDown{
+		height: 12%;
+		width: 12%;
+		margin-left: 4%;
 	}
-  
-	.palabraComoJugar {
-	  margin-top: 50%;
-	  margin-left: 23%;
-	  height: 30%;
-	  width: 60%;
+	.boxWordhowToplayOne{
+		margin-top: 50%;
+		margin-left: 23%;
+		height: 30%;
+		width: 60%;
 	}
-  
 	/*  caja que contiene el boton */
 	.boxButton {
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  min-height: 80vh;
-	  margin-top: -200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 80vh;
+		margin-top: -200px;
 	}
-	.redondo {
-	  display: block;
-	  width: 100px;
-	  height: 100px;
-	  border-radius: 50%;
-	  margin-top: 50px;
-	  margin-left: 25px;
-	  position: relative;
-  
-	  border-width: 0px;
-	  background-color: black;
-	  padding: 5px;
-	  box-shadow: 0 9px black;
+	.buttonStyle {
+		display: block;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		margin-top: 50px;
+		margin-left: 25px;
+		position: relative;
+		border-width: 0px;
+		background-color: black;
+		padding: 5px;
+		box-shadow: 0 9px black;
 	}
 	.imgBoton {
-	  display: block;
-	  width: 113px;
-	  height: 114px;
-  
-	  position: relative;
-	  margin-top: -11px;
-	  margin-left: -11px;
-	  border-width: 0px;
-	  background-color: transparent;
-	  padding: 5px;
+		display: block;
+		width: 113px;
+		height: 114px;
+		position: relative;
+		margin-top: -11px;
+		margin-left: -11px;
+		border-width: 0px;
+		background-color: transparent;
+		padding: 5px;
 	}
-	.redondo:active {
-	  background-color: black;
-	  box-shadow: 0 2px black;
-	  transform: translateY(4px);
+	.buttonStyle:active {
+		background-color: black;
+		box-shadow: 0 2px black;
+		transform: translateY(4px);
 	}
 	.pointer {
-	  display: block;
-	  width: 36%;
-	  height: 43%;
-	  margin-top: -35px;
-	  margin-left: 52px;
-	  position: relative;
-	  top: 86%;
-	  left: 38%;
-	  border-width: 0px;
-	  background-color: transparent;
+		display: block;
+		width: 36%;
+		height: 43%;
+		margin-top: -35px;
+		margin-left: 52px;
+		position: relative;
+		top: 86%;
+		left: 38%;
+		border-width: 0px;
+		background-color: transparent;
 	}
-  }
+	.containerFlexThree {
+		background-color: transparent;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		width: 155vh;
+		max-width: 100%;
+		height: 100%;
+		margin-left: 1%;
+		overflow: hidden;
+		padding: 5%;
+	}
 
-  .containerFlexThree {
-    width: 168vh;
-    max-width: 100%;
-    height: 95vh;
-    margin-left: -1%;
+	.r {
+		width: 30px;
+		margin-top: -3px;
+		margin-left: -76px;
+		height: 58px;
+	}
 
-}
 
-.imgGanaste {
-    width: 715px;
-    height: 141px;
-    margin-left: 7vh;
-    margin-right: auto;
-    margin-top: 3vh;
-}
 
-.EquipoRRRR{
-	margin-top: 324px;
-}
 
-.boxR{
-	margin-top: -73px;
-	margin-left: 422px;
-	
 }
