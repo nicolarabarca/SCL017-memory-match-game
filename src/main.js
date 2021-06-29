@@ -127,4 +127,3 @@ const main = {
   reset,
 };
 
-export default main;

@@ -27,7 +27,6 @@ body {
 
 
 /*  caja que contienela palabra pokemon */
-
 .boxImg {
 	width: 100%;
 	height: 60%;
@@ -36,7 +35,6 @@ body {
 
 
 /*  atributos imagen titulo pokemon */
-
 .img {
 	display: block;
 	width: 60%;
@@ -54,7 +52,6 @@ body {
 	width: 30%;
 	left: 30%;
 }
-
 
 /*  caja que contiene a pikachu */
 
@@ -78,7 +75,6 @@ body {
 
 
 /*  caja que contiene a bolbasor */
-
 .boxPokemon1 {
 	background-color: transparent;
 	float: left;
@@ -1201,6 +1197,10 @@ aqui se inicializa  trasera con rotate(180deg)  */
 	}
 
 
+}
 
-
+.boxR{
+	margin-top: -73px;
+	margin-left: 422px;
+	
 }
