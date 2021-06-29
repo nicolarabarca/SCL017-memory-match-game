@@ -51,4 +51,4 @@ _Se realizó testeo de usabilidad en grupo etario objetivo donde se detectaron l
 - JavaScript
 
 ###### Link de Merory match battle game
-- Si deseas  ver  nuestro proyecto  puedes  ingresar al siguiente enlace : https://magdasanhueza.github.io/SCL017-memory-match-game
+- Si deseas  ver  nuestro proyecto  puedes  ingresar al siguiente enlace : https://magdasanhueza.github.io/SCL017-memory-match-game/src
