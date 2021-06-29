@@ -5,18 +5,18 @@ En una primera instancia se creó un prototipo de baja fidelidad el cual consist
 El usuario solicitó un juego de memoria con temática de Pokemon para niños en etapa pre-escolar y escolares.
 La App debía tener una página de inicio con imagenes, temática de Pokemon y una página final.
 
-Historia de usuario 1: el usuario solicitó una pantalla de inicio del juego.
+- Historia de usuario 1: el usuario solicitó una pantalla de inicio del juego.
 -Solución: se crea pantalla de inicio que contiene imagenes, titulo y botón alusivo a la tematica principal del juego, fijamos principal atención en el diseño del botón para que este fuese intuitivo acorde a la edad de los usuarios.
 
-Historia de usuario 2: el usuario pide que se muestre el juego en otra pantalla.
+- Historia de usuario 2: el usuario pide que se muestre el juego en otra pantalla.
 -Solución: Se creó una segunda pantalla en la cual se divide en dos containers. 
     Primer container: contiene el set de cartas y es donde se desarrolla el juego.
     Segundo container: se muestran las instrucciones ilustrativas, esta parte se realiza con mucha dedicación ya que tuvimos que fijarno con mucho cuidado a quien iba dirigido (grupo etario), hay niños que no saben leer, por lo tanto se decidió hacerlas de forma visual y no con redactar textos explicativos.
 
-Historia de usuario 3: el usuario quería una tercera pantalla que finalizara el juego.
+- Historia de usuario 3: el usuario quería una tercera pantalla que finalizara el juego.
 -Solución: Se creó una tercera pantalla con la palabra GANASTE, ya que al momento de dar todas las cartas vueltas con sus respectivads parejas se finaliza el juego e inicia la pantalla 3, también se diseñó un botón de volver a jugar el cual redirige a la segunda pantalla donde se desarrolla nuevamente el juego. Así mismo como en las demás pantallas se sigue la tematica alusiva al juego.
 
-Historia de usuario 4: El usuario pidió que se pudiese jugar en otro tipo de pantallas tactiles.
+- Historia de usuario 4: El usuario pidió que se pudiese jugar en otro tipo de pantallas tactiles.
 -Solución: Se adaptaron las pantallas a medida de tablet ya que son las pantallas mas otorgadas por los padres. Se hizo responsive para iPad en posición portrait y landscape.
 
 ### Prototipo de baja fidelidad
