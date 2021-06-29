@@ -26,7 +26,7 @@ _Diseño prototipo de baja fidelidad juego de memoria en conjunto con usuario.
 
 ### Prototipo de alta fidelidad
 _Diseño prototipo de alta fidelidad juego de memoria en conjunto con usuario luego de iterar en el de baja fidelidad.
-![prototipo](https://github.com/nicolarabarca/SCL017-memory-match-game/blob/master/src/assets/prototipo%20de%20baja%20fidelidad.jpg)
+![prototipo](https://github.com/Magdasanhueza/SCL017-memory-match-game/blob/master/src/assets/prototipo%20alta%20fidelidad.png)
 
 
 
@@ -36,15 +36,9 @@ _Se realizó testeo de usabilidad en grupo etario objetivo donde se detectaron l
 -En la segunda pantalla en el item instrucciones algunos usuarios detectaron que no eran lo suficientemente explicitas las imagenes iniciales, las cuales correspondian a un simbolo ticket de color verde para las insteruciones correctas y una X de color roja para las instrucciones erradas, estas se reemplazron con iconos de pulgar hacia arriba y pulgar hacia abajo respectivamente lo que resultó mas atractivo e intuitivo para el usuario.
 
 
-
-##### Documentacion Prototipo Final
-
-![prototipo](https://github.com/nicolarabarca/SCL017-card-validation/blob/master/src/imagenes/prototipo.jpg)
-
-
 ### Test unitario
 
-![test](https://github.com/nicolarabarca/SCL017-card-validation/blob/master/src/imagenes/prototipo.jpg)
+![test](https://github.com/Magdasanhueza/SCL017-memory-match-game/blob/master/src/assets/Falla_test.jfif)
 
 ### Lenguaje utilizado
 
